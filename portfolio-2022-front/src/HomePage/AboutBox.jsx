@@ -13,7 +13,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 text-align: center;
-border-radius: 25px;
+border-radius: 35px;
 position: absolute;
 width: 160vh;
 height: auto;
