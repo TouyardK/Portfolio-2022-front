@@ -16,7 +16,7 @@ font-weight: 700;
   -webkit-text-fill-color: transparent;
   background-repeat: no-repeat;
   background-size: 80%;
-  animation: shine 8s linear;
+  animation: shine 4s linear;
   position: relative;
   @keyframes shine {
   0% {
