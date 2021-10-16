@@ -19,9 +19,8 @@ width: 160vh;
 height: auto;
 outline: none;
 border: none;
-box-shadow: 5px 5px 10px grey, -5px -5px 10px grey;
 background-color: #1d1d1f;
-background-image: linear-gradient(120deg, #fdb125, #fd5757);
+background-image: linear-gradient(120deg, #eb4f56, #9d66e9);
 `;
 
 const StyledTitleAbout = styled.h2`

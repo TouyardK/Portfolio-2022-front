@@ -9,7 +9,7 @@ font-weight: 700;
   text-align: center;
   font-family: Hack, sans-serif;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #000, orange, #000);
+  background: linear-gradient(91.36deg, #ECA658 0%, #F391A6 13.02%, #E188C3 25.52%, #A58DE3 37.5%, #56ABEC 49.48%, #737EB7 63.02%, #C8638C 72.92%, #DD5D57 84.38%, #DF6C51 97.92%);
   letter-spacing: 5px;
   -webkit-background-clip: text;
   background-clip: text;

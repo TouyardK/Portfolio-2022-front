@@ -22,7 +22,7 @@ z-index: 3;
 width: 100%;
 height: 100%;
 border-radius: 50%;
-filter: drop-shadow(0 0 0.95rem orange);
+filter: drop-shadow(0 0 0.95rem  #9d66e9);
 `;
 
 
