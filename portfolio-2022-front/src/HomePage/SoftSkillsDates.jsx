@@ -27,7 +27,7 @@ line-height: 1.1;
 
 const StyledRightBox = styled.div`
 display: flex;
-width: 80vh;
+width: auto;
 height: 55vh;
 `;
 
@@ -37,8 +37,8 @@ flex-direction: column;
 justify-content: space-between;
 line-height: 0.2;
 letter-spacing: -.05em;
-width: 50%;
-height: 45vh;
+width: 44vh;
+height: 48vh;
 `;
 
 const StyledLittleCase = styled.div`
