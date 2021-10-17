@@ -1,4 +1,8 @@
 import styled from "styled-components";
+import javascript from '../img/javascript.png'
+import mysql from '../img/mysql.png'
+import nodejs from '../img/nodejs.png'
+import react from '../img/react.png'
 
 const StyledSoftSkillsDatesContainer = styled.div`
 display: flex;
@@ -8,11 +12,17 @@ height: 80vh;
 `;
 
 const StyledLeftBox = styled.div`
+display: flex;
+justify-content: center;
+flex-direction: column;
+position: relative;
 background-color: #1d1d1f;
 border: 1px solid hsla(0,0%,51.4%,.16);
 border-radius: 55px;
-width: 60vh;
-height: 55vh;
+width: 75vh;
+height: 40vh;
+padding: 28px;
+line-height: 1.1;
 `;
 
 const StyledRightBox = styled.div`
@@ -28,11 +38,12 @@ justify-content: space-between;
 line-height: 0.2;
 letter-spacing: -.05em;
 width: 50%;
+height: 45vh;
 `;
 
 const StyledLittleCase = styled.div`
 display: flex;
-flex-direction: column;
+justify-content: center;
 align-items: center;
 background-color: #1d1d1f;
 border: 1px solid hsla(0,0%,51.4%,.16);
@@ -43,22 +54,17 @@ width: 450px;
 
 const Styledh3 = styled.h3`
 color: white;
-font-size: 33px;
+font-size: 38px;
 `;
 
 const StyledText = styled.p`
-color: white;
-font-size: 28px;
+color: #a3a3a3;
+font-size: 30px;
 `;
 
-const Styledh3InCase = styled.h3`
-color: white;
-font-size: 65px;
-`;
-
-const StyledTextInCase = styled.p`
-color: white;
-font-size: 22px;
+const StyledPicto = styled.img`
+height: 200px;
+width: 200px;
 `;
 
 export default function SoftSkillsDates () {
@@ -66,28 +72,26 @@ export default function SoftSkillsDates () {
         <>
             <StyledSoftSkillsDatesContainer>
                 <StyledLeftBox>
-                    <Styledh3>Webflow developer with years of web design experience.</Styledh3>
-                    <StyledText>I turn your designs into pixel-perfect Webflow sites with great attention to detail and elegant animations. Say goodbye to the stressful back and forth with developers who have no feel for design. For a limited number of selected clients, I also cover the whole process of concept, design and development.</StyledText>
+                    <Styledh3>Développeur Web FullStack 8 mois d'expérience.</Styledh3>
+                    <StyledText>De part ma formation, j'ai pu apprendre et mettre en pratique les compétences acquises au travers de divers projets de groupe ainsi que deux hackathon. Nous avons été formé pour être opérationnel en tant que FullStack, être autonome et pouvoir nous lancé dans notre carrière de développeur,
+                                avec de bonne bases.
+                    </StyledText>
                 </StyledLeftBox>
                 <StyledRightBox>
                     <StyledCaseRepartition>
                         <StyledLittleCase>
-                            <Styledh3InCase>45</Styledh3InCase>
-                            <StyledTextInCase>Happy clients</StyledTextInCase>
+                            <StyledPicto src={react} alt="react" />
                         </StyledLittleCase>
                         <StyledLittleCase>
-                            <Styledh3InCase>7+</Styledh3InCase>
-                            <StyledTextInCase>Projects</StyledTextInCase>
+                            <StyledPicto src={javascript} alt="js" />
                         </StyledLittleCase>
                     </StyledCaseRepartition>
                     <StyledCaseRepartition>
                         <StyledLittleCase>
-                            <Styledh3InCase>8 month</Styledh3InCase>
-                            <StyledTextInCase>Expériences</StyledTextInCase>
+                            <StyledPicto src={nodejs} alt="nodejs" />
                         </StyledLittleCase>
                         <StyledLittleCase>
-                            <Styledh3InCase>100%</Styledh3InCase>
-                            <StyledTextInCase>Passion</StyledTextInCase>
+                            <StyledPicto src={mysql} alt="mysql" />
                         </StyledLittleCase>
                     </StyledCaseRepartition>
                 </StyledRightBox>
