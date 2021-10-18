@@ -1,15 +1,18 @@
 import styled from "styled-components";
+import ProjectBox from "./ProjectBox";
 
 const ProjectContainer = styled.div`
 display: flex;
-height: 60vh;
+align-items: center;
+flex-direction: column;
+height: auto;
 width: auto;
 `;
 
 const TitleProject = styled.h2`
 padding: 75px;
 color: white;
-font-size: 8vh;
+font-size: 6vh;
 letter-spacing: 1vh;
 text-align: center;
   text-transform: uppercase;
@@ -26,6 +29,7 @@ export default function Project () {
         <>  
             <ProjectContainer>
                 <TitleProject>Mes Projets.</TitleProject>
+                <ProjectBox />
             </ProjectContainer>
         </>
     );

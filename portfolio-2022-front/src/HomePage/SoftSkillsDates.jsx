@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import javascript from '../img/javascript.png'
-import mysql from '../img/mysql.png'
-import nodejs from '../img/nodejs.png'
-import react from '../img/react.png'
+import javascript from '../Assets/javascript.png'
+import mysql from '../Assets/mysql.png'
+import nodejs from '../Assets/nodejs.png'
+import react from '../Assets/react.png'
 
 const StyledSoftSkillsDatesContainer = styled.div`
 display: flex;
@@ -20,7 +20,7 @@ background-color: #1d1d1f;
 border: 1px solid hsla(0,0%,51.4%,.16);
 border-radius: 55px;
 width: 75vh;
-height: 40vh;
+height: 42vh;
 padding: 28px;
 line-height: 1.1;
 `;
@@ -49,7 +49,7 @@ background-color: #1d1d1f;
 border: 1px solid hsla(0,0%,51.4%,.16);
 border-radius: 55px;
 height: 250px;
-width: 450px;
+width: 400px;
 `;
 
 const Styledh3 = styled.h3`
