@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from "styled-components";
 
 const StyledAboutBoxContainer = styled.div`
@@ -45,7 +46,7 @@ export default function AboutBox () {
                         Formé aux méthodes Agile, je suis à l'écoute des autres, à l'aise lorsqu'il sagit de travailler au sein d'une équipe.
                         <StyledBrAbout />
                         <StyledBrAbout />
-                        Actuellement je recherche un stage(2 - 4 mois) ou un poste en entreprise, et je reste ouvert à toute autre proposition.
+                        Actuellement je recherche un stage (2 - 4 mois) ou un poste en entreprise, et je reste ouvert à toute autre proposition.
                     </StyledTextAbout>
                 </StyledAboutBox>
             </StyledAboutBoxContainer>

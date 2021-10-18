@@ -1,5 +1,6 @@
+import React from 'react';
 import styled from "styled-components";
-import photoK from '../Assets/photoK.jpg';
+import PhotoK2 from '../Assets/PhotoK2.jpg';
 
 const StyledContainer = styled.div`
 display: flex;
@@ -10,8 +11,8 @@ const StyledContainerPhoto = styled.div`
 margin-bottom: 48px;
 min-height: 280px;
 min-width: 280px;
-height: 280px;
-width: 280px;
+height: 260px;
+width: 260px;
 max-height: 280px;
 max-height: 280px;
 `;
@@ -31,7 +32,7 @@ export default function Photo () {
     <>
     <StyledContainer>
         <StyledContainerPhoto>
-            <StyledPhoto src={photoK} alt="Kevin" />
+            <StyledPhoto src={PhotoK2} alt="Kevin" />
         </StyledContainerPhoto>
     </StyledContainer>
     </>
