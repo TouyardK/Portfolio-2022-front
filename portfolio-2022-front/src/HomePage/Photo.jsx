@@ -20,8 +20,8 @@ max-height: 280px;
 const StyledPhoto = styled.img`
 position: relative;
 z-index: 3;
-width: 100%;
-height: 100%;
+width: 300px;
+height: 300px;
 border-radius: 50%;
 filter: drop-shadow(0 0 0.95rem  #9d66e9);
 `;

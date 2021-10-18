@@ -20,6 +20,7 @@ width: 160vh;
 height: auto;
 outline: none;
 border: none;
+box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 background-color: #1d1d1f;
 background-image: linear-gradient(120deg, #eb4f56, #9d66e9);
 `;

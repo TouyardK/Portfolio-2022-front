@@ -1,55 +1,52 @@
 import React from 'react';
 import { Carousel } from 'react-carousel-minimal';
 import regionsud from '../Assets/regionsud.png';
+import regionsud2 from '../Assets/regionsud2.png'
+import regionsud3 from '../Assets/regionsud3.png'
+import fiiver1 from '../Assets/fiiver1.png'
+import fiiver2 from '../Assets/fiiver2.png'
 
 export default function ProjectCarousel() {
  const data = [
     {
       image: `${regionsud}`,
-      caption: "Région Sud"
+      caption: ""
     },
     {
-      image: "https://cdn.britannica.com/s:800x450,c:crop/35/204435-138-2F2B745A/Time-lapse-hyper-lapse-Isle-Skye-Scotland.jpg",
-      caption: "Scotland"
+      image: `${regionsud2}`,
+      caption: ""
     },
     {
-      image: "https://static2.tripoto.com/media/filter/tst/img/735873/TripDocument/1537686560_1537686557954.jpg",
-      caption: "Darjeeling"
+      image: `${regionsud3}`,
+      caption: ""
     },
     {
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Palace_of_Fine_Arts_%2816794p%29.jpg/1200px-Palace_of_Fine_Arts_%2816794p%29.jpg",
-      caption: "San Francisco"
+      image: `${fiiver1}`,
+      caption: ""
     },
     {
-      image: "https://i.natgeofe.com/n/f7732389-a045-402c-bf39-cb4eda39e786/scotland_travel_4x3.jpg",
-      caption: "Scotland"
+      image: `${fiiver2}`,
+      caption: ""
     },
     {
       image: "https://www.tusktravel.com/blog/wp-content/uploads/2020/07/Best-Time-to-Visit-Darjeeling-for-Honeymoon.jpg",
-      caption: "Darjeeling"
+      caption: ""
     },
     {
       image: "https://www.omm.com/~/media/images/site/locations/san_francisco_780x520px.ashx",
-      caption: "San Francisco"
+      caption: ""
     },
     {
       image: "https://images.ctfassets.net/bth3mlrehms2/6Ypj2Qd3m3jQk6ygmpsNAM/61d2f8cb9f939beed918971b9bc59bcd/Scotland.jpg?w=750&h=422&fl=progressive&q=50&fm=jpg",
-      caption: "Scotland"
+      caption: ""
     },
     {
       image: "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/02/summer-7.jpg",
-      caption: "Darjeeling"
+      caption: ""
     }
   ];
 
-  const captionStyle = {
-    fontSize: '2em',
-    fontWeight: 'bold',
-  }
-  const slideNumberStyle = {
-    fontSize: '20px',
-    fontWeight: 'bold',
-  }
+
   return (
     <div className="App">
       <div style={{ textAlign: "center" }}>
@@ -59,13 +56,9 @@ export default function ProjectCarousel() {
           <Carousel
             data={data}
             time={2000}
-            width="1200px"
-            height="600px"
-            captionStyle={captionStyle}
+            width="1500px"
+            height="800px"
             radius="10px"
-            slideNumber={true}
-            slideNumberStyle={slideNumberStyle}
-            captionPosition="bottom"
             automatic={true}
             dots={true}
             pauseIconSize="40px"
