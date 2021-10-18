@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import photoK from '../img/photoK.jpg';
+import photoK from '../Assets/photoK.jpg';
 
 const StyledContainer = styled.div`
 display: flex;

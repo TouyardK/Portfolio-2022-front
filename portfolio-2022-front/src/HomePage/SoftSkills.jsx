@@ -33,20 +33,6 @@ letter-spacing: 8px;
 font-size: 4vh;
 `;
 
-const StyledCaseContainer = styled.div`
-display: flex;
-height: auto;
-width: auto;
-`;
-
-const StyledCaseBox = styled.div`
-display: block;
-background-color: #1d1d1f;
-border: solid 1px #1d1d1f;
-border-radius: 45px;
-width: 300px;
-height: 300px;
-`;
 
 
 export default function SoftSkills () {
