@@ -1,26 +1,38 @@
+import React from 'react';
 import styled from "styled-components";
-import ecran from '../Assets/ecran.png';
+import mac from '../Assets/mac.svg';
+import ProjectCarousel from './ProjectCarousel';
 
 const BoxProjectContainer = styled.div`
 display: flex;
+position: relative;
+justify-content: center;
+align-items: center;
 height: auto;
 width: 160vh;
 border-radius: 35px;
-outline: none;
 border: none;
 `;
 
 const DesktopProject = styled.img`
-height: 100vh;
-width: 160vh;
+display: flex;
+height: auto;
+width: 130vh;
+`;
+
+const CarouselPosition = styled.div`
+position: absolute;
 `;
 
 export default function ProjectBox () {
     return(
         <>
             <BoxProjectContainer>
-                <DesktopProject src={ecran} alt="desk" />
+                <DesktopProject src={mac} alt="desk"/>
             </BoxProjectContainer>
+                <CarouselPosition>
+                    <ProjectCarousel />
+                </CarouselPosition>
         </>
     );
 }

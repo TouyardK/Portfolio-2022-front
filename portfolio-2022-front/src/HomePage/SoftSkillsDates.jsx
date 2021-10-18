@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from "styled-components";
 import javascript from '../Assets/javascript.png'
 import mysql from '../Assets/mysql.png'
