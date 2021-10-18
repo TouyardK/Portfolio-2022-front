@@ -1,10 +1,14 @@
 import React from 'react';
 import { Carousel } from 'react-carousel-minimal';
 import regionsud from '../Assets/regionsud.png';
-import regionsud2 from '../Assets/regionsud2.png'
-import regionsud3 from '../Assets/regionsud3.png'
-import fiiver1 from '../Assets/fiiver1.png'
-import fiiver2 from '../Assets/fiiver2.png'
+import regionsud2 from '../Assets/regionsud2.png';
+import regionsud3 from '../Assets/regionsud3.png';
+import fiiver1 from '../Assets/fiiver1.png';
+import fiiver2 from '../Assets/fiiver2.png';
+import fiiver3 from '../Assets/fiiver3.png';
+import oovy1 from '../Assets/Oovy1.png';
+import oovy2 from '../Assets/oovy2.png';
+import oovy3 from '../Assets/oovy3.png';
 
 export default function ProjectCarousel() {
  const data = [
@@ -29,19 +33,19 @@ export default function ProjectCarousel() {
       caption: ""
     },
     {
-      image: "https://www.tusktravel.com/blog/wp-content/uploads/2020/07/Best-Time-to-Visit-Darjeeling-for-Honeymoon.jpg",
+      image: `${fiiver3}`,
       caption: ""
     },
     {
-      image: "https://www.omm.com/~/media/images/site/locations/san_francisco_780x520px.ashx",
+      image: `${oovy1}`,
       caption: ""
     },
     {
-      image: "https://images.ctfassets.net/bth3mlrehms2/6Ypj2Qd3m3jQk6ygmpsNAM/61d2f8cb9f939beed918971b9bc59bcd/Scotland.jpg?w=750&h=422&fl=progressive&q=50&fm=jpg",
+      image: `${oovy2}`,
       caption: ""
     },
     {
-      image: "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/02/summer-7.jpg",
+      image: `${oovy3}`,
       caption: ""
     }
   ];
@@ -56,8 +60,8 @@ export default function ProjectCarousel() {
           <Carousel
             data={data}
             time={2000}
-            width="1500px"
-            height="800px"
+            width="1400px"
+            height="750px"
             radius="10px"
             automatic={true}
             dots={true}

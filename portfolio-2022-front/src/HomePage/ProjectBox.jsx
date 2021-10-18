@@ -17,7 +17,7 @@ border: none;
 const DesktopProject = styled.img`
 display: flex;
 height: auto;
-width: 130vh;
+width: 115vh;
 `;
 
 const CarouselPosition = styled.div`
