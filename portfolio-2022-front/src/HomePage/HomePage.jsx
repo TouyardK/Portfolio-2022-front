@@ -9,9 +9,9 @@ import Project from "./Project";
 
 const StyledContainerGlobal = styled.div`
 background-color: #1d1d1f;
-height: 100%;
-width: 100%;
-
+position: absolute;
+left: 0;
+right: 0;
 `;
 
 export default function HomePage () {

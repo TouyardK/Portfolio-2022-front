@@ -5,10 +5,13 @@ import PhotoK2 from '../Assets/PhotoK2.jpg';
 const StyledContainer = styled.div`
 display: flex;
 justify-content: center;
+align-items: center;
+margin-top: 35px;
+height: 35vh;
 `;
 
 const StyledContainerPhoto = styled.div`
-margin-bottom: 48px;
+margin-bottom: 55px;
 min-height: 280px;
 min-width: 280px;
 height: 260px;

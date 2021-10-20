@@ -5,7 +5,8 @@ const StyledContainerTitles = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-width: 100%;
+left: 0;
+right: 0;
 font-weight: 700;
   text-align: center;
   font-family: Hack, sans-serif;
