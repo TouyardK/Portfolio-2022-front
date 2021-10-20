@@ -11,7 +11,7 @@ const StyledSoftSkillsDatesContainer = styled.div`
 display: flex;
 background-color: black;
 justify-content: space-around;
-height: 80vh;
+height: 70vh;
 `;
 
 const StyledLeftBox = styled.div`
@@ -49,8 +49,8 @@ align-items: center;
 background-color: #1d1d1f;
 border: 1px solid hsla(0,0%,51.4%,.16);
 border-radius: 55px;
-height: 150px;
-width: 150px;
+height: 200px;
+width: 200px;
 `;
 
 const Styledh3 = styled.h3`
@@ -64,8 +64,8 @@ font-size: 30px;
 `;
 
 const StyledPicto = styled.img`
-height: 100px;
-width: 100px;
+height: 120px;
+width: 120px;
 `;
 
 export default function SoftSkillsDates () {
