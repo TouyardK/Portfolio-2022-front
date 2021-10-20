@@ -3,11 +3,20 @@ import { Link } from 'react-router-dom';
 
 export const StyledNavBar = styled.nav`
 display: flex;
+align-items: center;
+position: fixed;
+left: 0;
+right: 0;
+top: 0;
 background-color: black;
+bottom: auto;
+z-index: 100;
+padding-top: 10px;
+padding-bottom: 10px;
 justify-content: center;
 border-bottom: solid 1px white;
 width: auto;
-height: auto;
+height: 6vh;
 `;
 
 export const StyledLink = styled(Link)`

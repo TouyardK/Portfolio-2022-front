@@ -7,6 +7,8 @@ background-color: black;
 justify-content: center;
 align-items: center;
 border: solid 1px;
+left: 0;
+right: 0;
 height: auto;
 width: auto;
 `;
