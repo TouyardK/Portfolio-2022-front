@@ -5,6 +5,8 @@ import AboutBox from './AboutBox';
 import SoftSkills from "./SoftSkills";
 import SoftSkillsDates from "./SoftSkillsDates";
 import Project from "./Project";
+import ContactMe from "./ContactMe";
+import Footer from './Footer';
 
 
 const StyledContainerGlobal = styled.div`
@@ -23,6 +25,8 @@ export default function HomePage () {
             <SoftSkills />
             <SoftSkillsDates />
             <Project />
+            <ContactMe />
+            <Footer />
         </StyledContainerGlobal>
         </>
     );
