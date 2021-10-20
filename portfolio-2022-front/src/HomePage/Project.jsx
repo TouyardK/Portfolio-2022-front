@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import ProjectBox from "./ProjectBox";
+import ProjectAbout from "./ProjectAbout";
 
 const ProjectContainer = styled.div`
 display: flex;
@@ -34,6 +35,7 @@ export default function Project () {
                 <TitleProject>Projets.</TitleProject>
                 <ProjectBox />
             </ProjectContainer>
+                <ProjectAbout />
         </>
     );
 }
