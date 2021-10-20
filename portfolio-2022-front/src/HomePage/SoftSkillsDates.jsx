@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from "styled-components";
-import javascript from '../Assets/javascript.png'
-import mysql from '../Assets/mysql.png'
-import nodejs from '../Assets/nodejs.png'
-import react from '../Assets/react.png'
+import javascript from '../Assets/javascript.png';
+import mysql from '../Assets/mysql.png';
+import nodejs from '../Assets/nodejs.png';
+import react from '../Assets/react.png';
+import types from '../Assets/typescript.png';
+import css3 from '../Assets/css.png';
 
 const StyledSoftSkillsDatesContainer = styled.div`
 display: flex;
@@ -29,16 +31,14 @@ line-height: 1.1;
 const StyledRightBox = styled.div`
 display: flex;
 width: auto;
-height: 55vh;
+height: 42vh;
 `;
 
 const StyledCaseRepartition = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-line-height: 0.2;
-letter-spacing: -.05em;
-width: 44vh;
+width: 27vh;
 height: 48vh;
 `;
 
@@ -49,8 +49,8 @@ align-items: center;
 background-color: #1d1d1f;
 border: 1px solid hsla(0,0%,51.4%,.16);
 border-radius: 55px;
-height: 250px;
-width: 400px;
+height: 150px;
+width: 150px;
 `;
 
 const Styledh3 = styled.h3`
@@ -64,8 +64,8 @@ font-size: 30px;
 `;
 
 const StyledPicto = styled.img`
-height: 200px;
-width: 200px;
+height: 100px;
+width: 100px;
 `;
 
 export default function SoftSkillsDates () {
@@ -85,6 +85,14 @@ export default function SoftSkillsDates () {
                         </StyledLittleCase>
                         <StyledLittleCase>
                             <StyledPicto src={javascript} alt="js" />
+                        </StyledLittleCase>
+                    </StyledCaseRepartition>
+                    <StyledCaseRepartition>
+                        <StyledLittleCase>
+                            <StyledPicto src={types} alt="types" />
+                        </StyledLittleCase>
+                        <StyledLittleCase>
+                            <StyledPicto src={css3} alt="css" />
                         </StyledLittleCase>
                     </StyledCaseRepartition>
                     <StyledCaseRepartition>
