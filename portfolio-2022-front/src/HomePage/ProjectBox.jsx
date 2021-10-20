@@ -23,7 +23,7 @@ width: 80vh;
 const CarouselPosition = styled.div`
 display: block;
 position: absolute;
-height: 25vh;
+height: 30vh;
 `;
 
 export default function ProjectBox () {

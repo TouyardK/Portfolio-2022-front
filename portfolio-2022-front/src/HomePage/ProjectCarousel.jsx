@@ -60,7 +60,7 @@ export default function ProjectCarousel() {
           <Carousel
             data={data}
             time={2000}
-            width="760px"
+            width="750px"
             height="320px"
             radius="10px"
             automatic={true}
