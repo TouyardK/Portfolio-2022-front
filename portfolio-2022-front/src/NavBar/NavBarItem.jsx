@@ -5,8 +5,8 @@ import { StyledLink } from '../Styles/StyledNavBar';
 export const StyledNavBarItem = styled.div`
 display: inline-block;
 list-style: none;
-font-size: 1.2rem;
-letter-spacing: 1px;
+font-size: 0.85rem;
+letter-spacing: 7px;
 padding: 10px 85px;
 font-weight: lighter;
 text-align: center;
