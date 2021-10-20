@@ -60,8 +60,8 @@ export default function ProjectCarousel() {
           <Carousel
             data={data}
             time={2000}
-            width="1400px"
-            height="750px"
+            width="760px"
+            height="320px"
             radius="10px"
             automatic={true}
             dots={true}

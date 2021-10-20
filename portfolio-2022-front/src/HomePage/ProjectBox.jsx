@@ -16,12 +16,14 @@ border: none;
 
 const DesktopProject = styled.img`
 display: flex;
-height: auto;
-width: 115vh;
+height: 60vh;
+width: 80vh;
 `;
 
 const CarouselPosition = styled.div`
+display: block;
 position: absolute;
+height: 25vh;
 `;
 
 export default function ProjectBox () {
