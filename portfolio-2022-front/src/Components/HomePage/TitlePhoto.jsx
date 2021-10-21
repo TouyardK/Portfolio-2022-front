@@ -45,7 +45,7 @@ export default function TitlePhoto () {
         <>
         <StyledContainerTitles>
             <StyledTitleName>Touyard Kévin</StyledTitleName>
-            <StyledTitlePro>Développeur FullStack Junior.</StyledTitlePro>
+            <StyledTitlePro>Junior FullStack Web-Developer</StyledTitlePro>
         </StyledContainerTitles>
         </>
     );

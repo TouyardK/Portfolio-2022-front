@@ -21,7 +21,7 @@ export default function NavBar () {
         },
         {
             id: 4,
-            content: 'CONTACT-ME',
+            content: 'CONTACT',
             path: '/',
         },
     ];

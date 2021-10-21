@@ -6,6 +6,9 @@ import SoftSkills from "./SoftSkills";
 import SoftSkillsDates from "./SoftSkillsDates";
 import AdditionalSkills from "./AdditionalSkills";
 import ContactMe from "./ContactMe";
+import ProjectStand from "./ProjectStand";
+import ProjectStandContain from "./ProjectStandContain";
+
 import Footer from './Footer';
 
 
@@ -26,6 +29,8 @@ export default function HomePage () {
             <SoftSkills />
             <SoftSkillsDates />
             <AdditionalSkills />
+            <ProjectStand />
+            <ProjectStandContain />
             <ContactMe />
             <Footer />
         </StyledContainerGlobal>
