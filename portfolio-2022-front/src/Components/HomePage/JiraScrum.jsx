@@ -81,7 +81,7 @@ export default function JiraScrum () {
                     <LeftCol>
                         <TitleResponsive>Agility Method Developpement</TitleResponsive>
                             <LineTop />
-                        <TextResponsive>During the training, we had several projects to carry out in groups, in order to teach us how to work in an agile method. By managing sprints, tickets, story points.</TextResponsive>
+                        <TextResponsive>During the training, we had several projects to carry out in groups, in order to teach us how to work with the agile method. By managing sprints, tickets, story points.</TextResponsive>
                             <Line />
                     </LeftCol>
                 </ContainerImgAndText>

@@ -30,16 +30,18 @@ box-shadow: 0 0 10px 5px;
 const StyledTitleAbout = styled.h2`
 color: whitesmoke;
 font-size: 3.5vh;
-height: 1vh;
-text-decoration: underline #89ffac;
+height: 0.8vh;
+text-decoration: underline #ffffff;
 `;
 
 const StyledTextAbout = styled.p`
 color: whitesmoke;
 font-size: 2.5vh;
+height: 10vh;
 `;
 
-const StyledBrAbout = styled.br``;
+const StyledBrAbout = styled.br`
+`;
 
 
 export default function AboutBox () {
@@ -47,13 +49,14 @@ export default function AboutBox () {
         <>
             <StyledAboutBoxContainer>
                 <StyledAboutBox>
-                    <StyledTitleAbout>About me :</StyledTitleAbout>
-                    <StyledTextAbout>Issu du BTP, passionné d'informatique et intéressé par la programmation, je me suis engagé dans une formation de développeur Web / Application mobile Fullstack au sein de la Wild Code School. Orienté JavaScript, j'ai acquis des compétences aussi bien en back / front-end que React / Node.Js / MySql.
-                        Formé aux méthodes Agile, je suis à l'écoute des autres, à l'aise lorsqu'il sagit de travailler au sein d'une équipe.
+                    <StyledTitleAbout>Introduction :</StyledTitleAbout>
+                    <StyledTextAbout>I'm a former construction industry worker. As a true computer enthusiast, and manifesting a genuine interest in learning programming, I decided to move onto a Web Development / Fullstack Mobile Application training course within the Wild Code School. Specialized in JavaScript language, I have also acquired skills and knowledge about back/front-end web development as well as React / Node.Js / MySql. When it's about teambuilding or management, I'm used to working with the "Agile method", I adhere to its philosophy and prefer from this way, when it comes to dealing with people or associates co-workers etc...
                         <StyledBrAbout />
                         <StyledBrAbout />
-                        Actuellement je recherche un stage (2 - 4 mois) ou un poste en entreprise, et je reste ouvert à toute autre proposition.
                     </StyledTextAbout>
+                    <StyledTextAbout>
+                    <StyledBrAbout />At the moment I'm looking for an internship (2-4 months) or a company position, I'm always open to any job suggestion concerning my domain of expertise with the skills mentioned above.
+                                    Do not hesitate to get in touch with me for any further inquiries.</StyledTextAbout>
                 </StyledAboutBox>
             </StyledAboutBoxContainer>
         </>
