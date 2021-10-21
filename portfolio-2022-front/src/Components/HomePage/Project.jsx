@@ -10,6 +10,7 @@ align-items: center;
 flex-direction: column;
 height: auto;
 width: auto;
+font-family: 'Oswald', sans-serif;
 `;
 
 const TitleProject = styled.h2`

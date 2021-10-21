@@ -7,6 +7,7 @@ justify-content: center;
 align-items: center;
 height: 45vh;
 width: auto;
+font-family: 'Oswald', sans-serif;
 `;
 
 const StyledAboutBox = styled.div`

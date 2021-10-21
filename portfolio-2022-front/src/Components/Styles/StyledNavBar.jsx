@@ -17,6 +17,7 @@ justify-content: center;
 border-bottom: solid 1px white;
 width: auto;
 height: 6vh;
+font-family: 'Oswald', sans-serif;
 `;
 
 export const StyledLink = styled(Link)`

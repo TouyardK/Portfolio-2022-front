@@ -12,6 +12,7 @@ display: flex;
 background-color: black;
 justify-content: space-around;
 height: 70vh;
+font-family: 'Oswald', sans-serif;
 `;
 
 const StyledLeftBox = styled.div`
