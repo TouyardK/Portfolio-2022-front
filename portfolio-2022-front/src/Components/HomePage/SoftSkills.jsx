@@ -22,7 +22,7 @@ width: 150vh;
 height: 50vh;
 line-height: 1vh;
 padding-left: 20vh;
-font-family: 'Oswald', sans-serif;
+font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 `;
 
 const StyledH1 = styled.h1`
@@ -37,6 +37,15 @@ letter-spacing: 8px;
 font-size: 4vh;
 `;
 
+const LineTop = styled.div`
+border: solid 1px;
+background-image: linear-gradient(120deg, #f8ff8f, #ffee00);
+width: 45vh;
+border-radius: 35px;
+height: 3px;
+`;
+
+
 
 
 export default function SoftSkills () {
@@ -45,6 +54,7 @@ export default function SoftSkills () {
             <StyledTitleContainer>
                 <StyledTitleBox>
                     <StyledH2>Soft Skills</StyledH2>
+                    <LineTop />
                     <StyledH1>JavaScript developper</StyledH1>
                     <StyledH1>Front-end Designer.</StyledH1>
                 </StyledTitleBox>

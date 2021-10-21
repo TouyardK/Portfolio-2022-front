@@ -11,17 +11,17 @@ export default function NavBar () {
         },
         {
             id: 2,
-            content: 'PROJETS',
+            content: 'PROJECTS',
             path: '/',
         },
         {
             id: 3,
-            content: 'MON CV',
+            content: 'RESUME',
             path: '/',
         },
         {
             id: 4,
-            content: 'CONTACTEZ-MOI',
+            content: 'CONTACT-ME',
             path: '/',
         },
     ];

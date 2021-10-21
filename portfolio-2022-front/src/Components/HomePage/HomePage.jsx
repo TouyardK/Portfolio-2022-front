@@ -4,13 +4,14 @@ import Header from './Header';
 import AboutBox from './AboutBox';
 import SoftSkills from "./SoftSkills";
 import SoftSkillsDates from "./SoftSkillsDates";
-import Project from "./Project";
+import AdditionalSkills from "./AdditionalSkills";
 import ContactMe from "./ContactMe";
 import Footer from './Footer';
 
 
 const StyledContainerGlobal = styled.div`
 background-color: #1d1d1f;
+font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 position: absolute;
 left: 0;
 right: 0;
@@ -24,7 +25,7 @@ export default function HomePage () {
             <AboutBox />
             <SoftSkills />
             <SoftSkillsDates />
-            <Project />
+            <AdditionalSkills />
             <ContactMe />
             <Footer />
         </StyledContainerGlobal>

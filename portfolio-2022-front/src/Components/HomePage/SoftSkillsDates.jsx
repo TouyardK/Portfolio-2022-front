@@ -12,13 +12,15 @@ display: flex;
 background-color: black;
 justify-content: space-around;
 height: 70vh;
-font-family: 'Oswald', sans-serif;
+font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 `;
 
 const StyledLeftBox = styled.div`
 display: flex;
 justify-content: center;
+align-items: center;
 flex-direction: column;
+text-align: center;
 position: relative;
 background-color: #1d1d1f;
 border: 1px solid hsla(0,0%,51.4%,.16);
@@ -69,14 +71,21 @@ height: 120px;
 width: 120px;
 `;
 
+const Line = styled.div`
+border: solid 1px;
+width: 17vh;
+height: 1px;
+`;
+
 export default function SoftSkillsDates () {
     return(
         <>
             <StyledSoftSkillsDatesContainer>
                 <StyledLeftBox>
-                    <Styledh3>Développeur Web FullStack 8 mois d'expérience.</Styledh3>
-                    <StyledText>De part ma formation, j'ai pu apprendre et mettre en pratique les compétences acquises au travers de divers projets de groupe ainsi que deux hackathon. Nous avons été formé pour être opérationnel en tant que FullStack, être autonome et pouvoir nous lancé dans notre carrière de développeur,
-                                avec de bonne bases.
+                    <Styledh3>FullStack Web Developer 8 months of experience.</Styledh3>
+                        <Line />
+                    <StyledText>Due to my training, I was able to learn and put into practice the skills acquired through various group projects as well as two hackathons. We have been trained to be operational as a FullStack, to be autonomous and to be able to launch our career as a developer,
+                                with good foundations.
                     </StyledText>
                 </StyledLeftBox>
                 <StyledRightBox>
