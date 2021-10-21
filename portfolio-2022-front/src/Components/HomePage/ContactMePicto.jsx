@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
-import github from '../Assets/github.png';
-import linkedin from '../Assets/linkedin.png';
-import smart from '../Assets/smart.png';
+import github from '../../Assets/github.png';
+import linkedin from '../../Assets/linkedin.png';
+import smart from '../../Assets/smart.png';
 
 const PictoContainer = styled.div`
 display: flex;

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import mac from '../Assets/mac.svg';
+import mac from '../../Assets/mac.svg';
 import ProjectCarousel from './ProjectCarousel';
 
 const BoxProjectContainer = styled.div`

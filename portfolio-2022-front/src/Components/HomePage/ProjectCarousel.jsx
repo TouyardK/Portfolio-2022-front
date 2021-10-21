@@ -1,14 +1,14 @@
 import React from 'react';
 import { Carousel } from 'react-carousel-minimal';
-import regionsud from '../Assets/regionsud.png';
-import regionsud2 from '../Assets/regionsud2.png';
-import regionsud3 from '../Assets/regionsud3.png';
-import fiiver1 from '../Assets/fiiver1.png';
-import fiiver2 from '../Assets/fiiver2.png';
-import fiiver3 from '../Assets/fiiver3.png';
-import oovy1 from '../Assets/Oovy1.png';
-import oovy2 from '../Assets/oovy2.png';
-import oovy3 from '../Assets/oovy3.png';
+import regionsud from '../../Assets/regionsud.png';
+import regionsud2 from '../../Assets/regionsud2.png';
+import regionsud3 from '../../Assets/regionsud3.png';
+import fiiver1 from '../../Assets/fiiver1.png';
+import fiiver2 from '../../Assets/fiiver2.png';
+import fiiver3 from '../../Assets/fiiver3.png';
+import oovy1 from '../../Assets/Oovy1.png';
+import oovy2 from '../../Assets/oovy2.png';
+import oovy3 from '../../Assets/oovy3.png';
 
 export default function ProjectCarousel() {
  const data = [

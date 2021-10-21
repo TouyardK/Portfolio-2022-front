@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from "styled-components";
-import javascript from '../Assets/javascript.png';
-import mysql from '../Assets/mysql.png';
-import nodejs from '../Assets/nodejs.png';
-import react from '../Assets/react.png';
-import types from '../Assets/typescript.png';
-import css3 from '../Assets/css.png';
+import javascript from '../../Assets/javascript.png';
+import mysql from '../../Assets/mysql.png';
+import nodejs from '../../Assets/nodejs.png';
+import react from '../../Assets/react.png';
+import types from '../../Assets/typescript.png';
+import css3 from '../../Assets/css.png';
 
 const StyledSoftSkillsDatesContainer = styled.div`
 display: flex;
