@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import PhotoK2 from '../Assets/PhotoK2.jpg';
+import PhotoK2 from '../../Assets/PhotoK2.jpg';
 
 const StyledContainer = styled.div`
 display: flex;
