@@ -5,6 +5,7 @@ const FooterContainer = styled.div`
 display: block;
 background-color: black;
 height: 5vh;
+font-family: 'Oswald', sans-serif;
 `;
 
 const FooterBottom = styled.div`
@@ -25,7 +26,7 @@ export default function Footer () {
         <>
             <FooterContainer>
                 <FooterBottom>
-                    <FooterText>© 2021 TOUYARD Kévin Website</FooterText>
+                    <FooterText>© 2021 TOUYARD Kévin</FooterText>
                 </FooterBottom>
             </FooterContainer>
         </>

@@ -20,8 +20,9 @@ background-color: black;
 border-radius: 25px;
 width: 150vh;
 height: 50vh;
-line-height: 0.5;
+line-height: 1vh;
 padding-left: 20vh;
+font-family: 'Oswald', sans-serif;
 `;
 
 const StyledH1 = styled.h1`
