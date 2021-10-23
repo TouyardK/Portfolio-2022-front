@@ -17,9 +17,9 @@ letter-spacing: 5px;
 -webkit-background-clip: text;
 background-clip: text;
 -webkit-text-fill-color: transparent;
-background-repeat: no-repeat;
+background-repeat: repeat;
 background-size: 80%;
-animation: shine 2s linear;
+animation: shine 15s infinite;
 position: relative;
 @keyframes shine {
 0% {
