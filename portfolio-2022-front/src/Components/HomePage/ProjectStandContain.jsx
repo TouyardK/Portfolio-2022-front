@@ -11,7 +11,7 @@ width: auto;
 const ContainerCardProject = styled.div`
 display: flex;
 flex-direction: column;
-width: 138vh;
+width: 137vh;
 height: auto;
 background-color: #1d1d1f;
 font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
