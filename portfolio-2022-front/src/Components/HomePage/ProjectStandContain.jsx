@@ -4,35 +4,36 @@ import styled from "styled-components";
 const GlobalContainer = styled.div`
 display: flex;
 justify-content: center;
+height: auto;
+width: auto;
 `;
 
 const ContainerCardProject = styled.div`
 display: flex;
+flex-direction: column;
+width: 138vh;
+height: auto;
 background-color: #1d1d1f;
-height: 90vh;
-width: 110vh;
 font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 `;
 
 const RightContainer = styled.div`
 display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-around;
-width: 50%;
+justify-content: space-between;
+width: auto;
+height: 30vh;
 `;
 
 const LeftContainer = styled.div`
 display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-around;
-width: 50%;
+justify-content: space-between;
+width: auto;
+height: 44vh;
 `;
 
 const CardProject = styled.div`
 height: 400px;
-width: 500px;
+width: 650px;
 background-color: white;
 border: solid 1px;
 border-radius: 35px;
