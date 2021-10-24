@@ -19,8 +19,6 @@ height: 250px;
 width: 1000px;
 `;
 
-const titleproject = styled.h1``
-
 
 export default function GetProjects () {
     const [listProject, setListProject] = useState([]);
