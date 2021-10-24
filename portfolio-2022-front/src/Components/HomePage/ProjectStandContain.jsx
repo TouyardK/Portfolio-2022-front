@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import GetProjects from "../Projects/GetProjects";
 
 const GlobalContainer = styled.div`
 display: flex;
@@ -39,19 +40,16 @@ border: solid 1px;
 border-radius: 35px;
 `;
 
-export default function ProjectStandContain () {
+export default function ProjectStandContain ({ title, id }) {
     return (
         <>
         <GlobalContainer>
             <ContainerCardProject >
                 <LeftContainer>
-                    <CardProject />
-                    <CardProject />
+                <GetProjects>
+                    <h1>{title}</h1>
+                </GetProjects>    
                 </LeftContainer>
-                <RightContainer>
-                    <CardProject />
-                    <CardProject />
-                </RightContainer>
             </ContainerCardProject >
         </GlobalContainer>
         </>
