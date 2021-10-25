@@ -2,12 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
 
-export const CardProjects = styled.div`
-height: 200px;
-width: 200px;
-`;
 
-export const BodyProjects = styled.h1`
+export const BodyProjects = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
@@ -18,6 +14,8 @@ background-color: black;
 height: 250px;
 width: 1000px;
 `;
+
+const TitleProjects = styled.h2``;
 
 
 export default function GetProjects () {
@@ -39,12 +37,14 @@ export default function GetProjects () {
 
 
       return(
-            <CardProjects>
+            <>
                 {listProject.map((listing) => (
                 <BodyProjects>
-                {listing.title}
+                  <TitleProjects>
+                    {listing.title}
+                  </TitleProjects>
                 </BodyProjects>
                 ))}
-            </CardProjects>
+            </>
       );
 }

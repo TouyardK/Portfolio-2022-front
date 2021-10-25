@@ -37,7 +37,6 @@ font-size: 2rem;
 
 const StyledTitlePro = styled.h1`
 font-size: 3rem;
-font-family: 'Oswald', sans-serif;
 `;
 
 export default function TitlePhoto () {
