@@ -17,14 +17,14 @@ width: auto;
 const ContainerTop = styled.div`
 display: flex;
 justify-content: space-around;
-width: 170vh;
-height: 52vh;
+width: 160vh;
+height: 50vh;
 `;
 
 const ContainerBottom = styled.div`
 display: flex;
 justify-content: space-around;
-width: 170vh;
+width: 160vh;
 height: auto;
 `;
 

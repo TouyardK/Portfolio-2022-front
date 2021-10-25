@@ -1,26 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
-import { TitleProjects, ContentProjects } from './GetRegionSud';
+import { ButtonProjects } from './GetRegionSud';
 import oovy1 from '../../Assets/Oovy1.png';
 
 const BodyOovy = styled.div`
 display: flex;
-justify-content: center;
 align-items: center;
-flex-direction: column;
+justify-content: center;
 text-align: center;
 background-image: url(${oovy1});
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 border: 1px solid hsla(0,0%,51.4%,.16);
-border-radius: 55px;
+border-radius: 35px;
 width: 75vh;
-height: 42vh;
-padding: 28px;
-line-height: 1.1;
+height: 45vh;
+&:hover{
+  transform: scale(1.12);
+  transition: all 1s;
+  }
 `;
+
 
 
 export default function GetOovy () {
@@ -44,12 +46,9 @@ export default function GetOovy () {
             <>
                 {itemProject.map((item) => (
                 <BodyOovy>
-                  <TitleProjects>
+                  <ButtonProjects>
                     {item.title}
-                  </TitleProjects>
-                  <ContentProjects>
-                    {item.content}
-                  </ContentProjects>
+                  </ButtonProjects>
                 </BodyOovy>
                 ))}
             </>

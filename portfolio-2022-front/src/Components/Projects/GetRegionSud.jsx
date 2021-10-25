@@ -6,30 +6,32 @@ import regionsud from '../../Assets/regionsud.png';
 
 export const BodyProjects = styled.div`
 display: flex;
-justify-content: center;
 align-items: center;
-flex-direction: column;
+justify-content: center;
 text-align: center;
 background-image: url(${regionsud});
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 border: 1px solid hsla(0,0%,51.4%,.16);
-border-radius: 55px;
+border-radius: 35px;
 width: 75vh;
-height: 42vh;
-padding: 28px;
-line-height: 1.1;
+height: 45vh;
+&:hover{
+    transform: scale(1.12);
+    transition: all 1s;
+  }
 `;
 
-export const TitleProjects = styled.h2`
+export const ButtonProjects = styled.button`
 color: white;
+border: solid 5px #1d1d1f;
+background-image: linear-gradient(120deg, #eb4f56, #9d66e9);
+border-radius: 35px;
+width: 20vh;
+height: 5vh;
 `;
 
-export const ContentProjects = styled.p`
-color: white;
-text-align: center;
-`;
 
 
 
@@ -54,12 +56,9 @@ export default function GetRegionSud () {
             <>
                 {itemProject.map((item) => (
                 <BodyProjects>
-                  <TitleProjects>
+                  <ButtonProjects>
                     {item.title}
-                  </TitleProjects>
-                  <ContentProjects>
-                    {item.content}
-                  </ContentProjects>
+                  </ButtonProjects>
                 </BodyProjects>
                 ))}
             </>

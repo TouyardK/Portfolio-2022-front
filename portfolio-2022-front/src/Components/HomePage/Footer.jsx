@@ -26,7 +26,7 @@ export default function Footer () {
         <>
             <FooterContainer>
                 <FooterBottom>
-                    <FooterText>© 2021 TOUYARD Kévin</FooterText>
+                    <FooterText>© 2021 TOUYARD Kévin. All rights reserved.</FooterText>
                 </FooterBottom>
             </FooterContainer>
         </>
