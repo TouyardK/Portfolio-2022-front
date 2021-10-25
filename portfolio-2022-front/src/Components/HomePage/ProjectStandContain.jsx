@@ -1,56 +1,46 @@
 import React from "react";
 import styled from "styled-components";
-import GetProjects from "../Projects/GetProjects";
+import GetRegionSud from "../Projects/GetRegionSud";
+import GetFiiver from "../Projects/GetFiiver";
+import GetOovy from "../Projects/GetOovy";
+import GetAkgs from "../Projects/GetAkgs";
 
 const GlobalContainer = styled.div`
 display: flex;
+align-items: center;
+flex-direction: column;
 justify-content: center;
 height: auto;
 width: auto;
 `;
 
-const ContainerCardProject = styled.div`
+const ContainerTop = styled.div`
 display: flex;
-flex-direction: column;
-width: 137vh;
+justify-content: space-around;
+width: 170vh;
+height: 52vh;
+`;
+
+const ContainerBottom = styled.div`
+display: flex;
+justify-content: space-around;
+width: 170vh;
 height: auto;
-background-color: #1d1d1f;
-font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 `;
 
-const RightContainer = styled.div`
-display: flex;
-justify-content: space-between;
-width: auto;
-height: 30vh;
-`;
 
-const LeftContainer = styled.div`
-display: flex;
-justify-content: space-between;
-width: auto;
-height: 44vh;
-`;
-
-const CardProject = styled.div`
-height: 400px;
-width: 650px;
-background-color: white;
-border: solid 1px;
-border-radius: 35px;
-`;
-
-export default function ProjectStandContain ({ title, id }) {
+export default function ProjectStandContain () {
     return (
         <>
         <GlobalContainer>
-            <ContainerCardProject >
-                <LeftContainer>
-                <GetProjects>
-                    <h1>{title}</h1>
-                </GetProjects>    
-                </LeftContainer>
-            </ContainerCardProject >
+            <ContainerTop>
+              <GetRegionSud />
+              <GetFiiver />  
+            </ContainerTop>
+              <ContainerBottom>
+                <GetOovy />
+                <GetAkgs />
+              </ContainerBottom>
         </GlobalContainer>
         </>
     )
