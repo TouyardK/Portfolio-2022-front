@@ -6,7 +6,7 @@ const ModalOverlay = styled.div`
 position: fixed;
 top: 0;
 left: 0;
-width: 100vw;
+width: 100vh;
 height: 100vh;
 z-index: 1040;
 background-color: rgba(0, 0, 0, 0.5);
@@ -27,11 +27,12 @@ const ModalWrapper = styled.div`
 
 const ModalContain = styled.div`
   z-index: 100;
-  background: #fff;
+  background: #b3b3b3;
   position: relative;
   margin: auto;
   border-radius: 35px;
   width: 80%;
+  height: auto;
   padding: 1rem;
 `;
 
@@ -42,8 +43,10 @@ const ModalHeader = styled.div`
 `;
 
 const ModalBody = styled.div`
+display: flex;
+flex-direction: column;
 width: 150vh;
-height: 50vh;
+height: 60vh;
 `;
 
 const ModalCloseButton = styled.button`

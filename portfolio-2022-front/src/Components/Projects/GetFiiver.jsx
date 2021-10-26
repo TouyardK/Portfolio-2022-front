@@ -3,6 +3,10 @@ import axios from 'axios';
 import styled from 'styled-components';
 import { ButtonProjects } from './GetRegionSud';
 import fiiver1 from '../../Assets/fiiver1.png'
+import Modal from '../Modal/Modal';
+import useModal from '../Modal/useModal';
+import fiiver2 from '../../Assets/fiiver2.png';
+import fiiver3 from '../../Assets/fiiver3.png';
 
 const BodyFiiver = styled.div`
 display: flex;
@@ -24,6 +28,41 @@ height: 45vh;
   }
 `;
 
+const ModalBody = styled.div`
+display: flex;
+flex-direction: column;
+width: 100%;
+height: 55vh;
+padding: 50px;
+`;
+
+const ContainerImg = styled.div`
+display: flex;
+justify-content: space-around;
+width: 100%;
+height: 35vh;
+`;
+
+const ContainerText = styled.div`
+display: flex;
+width: 100%;
+height: 10vh;
+`;
+
+
+const ModalText = styled.p`
+text-align: center;
+`;
+
+const ModalImg = styled.img`
+height: 35vh;
+width: 48vh;
+&:hover{
+    transform: scale(1.80);
+    transition: all 2s;
+  }
+`;
+
 export default function GetFiiver () {
     const [itemProject, setItemProject] = useState([]);
 
@@ -39,15 +78,34 @@ export default function GetFiiver () {
         RequestProject();
       }, []);
 
-
+      const { isOpen: isProjectShowed, toggle: toggleInProject } = useModal();
 
       return(
             <>
                 {itemProject.map((item) => (
                 <BodyFiiver>
-                  <ButtonProjects>
+                  <ButtonProjects type="button" onClick={toggleInProject}>
                     {item.title}
                   </ButtonProjects>
+                  <Modal
+                  isOpen={isProjectShowed}
+                  hide={toggleInProject}
+                  title="Hackathon Fiiver"
+                  >
+                      <ModalBody>
+                        <ContainerImg>
+                          <ModalImg src={fiiver1} alt="rs2" />
+                          <ModalImg src={fiiver2} alt="rs3" />
+                          <ModalImg src={fiiver3} alt="rs4" />
+                        </ContainerImg>
+                        <ContainerText>
+                             <ModalText>
+                             Nous avons développé un module complétementaire pour le site Fiiver, qui permet à la communautée de créer des évènements pour partager des moments de convivialité.
+                            
+                             </ModalText>
+                          </ContainerText>
+                      </ModalBody>
+                  </Modal>
                 </BodyFiiver>
                 ))}
             </>
