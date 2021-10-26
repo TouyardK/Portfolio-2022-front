@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
+import Modal from '../Modal/Modal';
 import regionsud from '../../Assets/regionsud.png';
+import useModal from '../Modal/useModal';
 
 
 export const BodyProjects = styled.div`
@@ -20,6 +22,7 @@ height: 45vh;
 &:hover{
     transform: scale(1.12);
     transition: all 1s;
+    filter: drop-shadow(0 0 0.95rem white);
   }
 `;
 
@@ -50,15 +53,22 @@ export default function GetRegionSud () {
         RequestProject();
       }, []);
 
-
+      const { isOpen: isProjectShowed, toggle: toggleInProject } = useModal();
 
       return(
             <>
                 {itemProject.map((item) => (
                 <BodyProjects>
-                  <ButtonProjects>
+                  <ButtonProjects type="button" onClick={toggleInProject}>
                     {item.title}
                   </ButtonProjects>
+                  <Modal
+                  isOpen={isProjectShowed}
+                  hide={toggleInProject}
+                  title="Hello"
+                  >
+
+                  </Modal>
                 </BodyProjects>
                 ))}
             </>
