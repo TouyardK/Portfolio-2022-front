@@ -20,6 +20,7 @@ height: 45vh;
 &:hover{
   transform: scale(1.12);
   transition: all 1s;
+  filter: drop-shadow(0 0 0.95rem white);
   }
 `;
 
