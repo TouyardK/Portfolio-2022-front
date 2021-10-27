@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Modal from '../Modal/Modal';
 import regionsud from '../../Assets/regionsud.png';
 import useModal from '../Modal/useModal';
+import logoRs from '../../Assets/logoRS.png';
 import rs2 from '../../Assets/regionsud2.png';
 import rs3 from '../../Assets/regionsud3.png';
 import rs4 from '../../Assets/regionsud4.png';
@@ -14,28 +15,43 @@ display: flex;
 align-items: center;
 justify-content: center;
 text-align: center;
-background-image: url(${regionsud});
+background-image: url(${logoRs});
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-border: 1px solid hsla(0,0%,51.4%,.16);
+border: 3px solid black;
 border-radius: 28px;
-width: 75vh;
+width: 60vh;
 height: 45vh;
+transform-style: preserve-3d;
+transform-origin: top center;
+will-change: transform;
+transform: skewX(.001deg);
+transition: transform .50s ease-in-out;
 &:hover{
-    transform: scale(1.12);
-    transition: all 1s;
-    filter: drop-shadow(0 0 0.95rem white);
-  }
+cursor: pointer;
+transform: translateY(-20%);
+will-change: transform;
+transition: transform .65s cubic-bezier(0.18, 0.9, 0.58, 1);
+background-image: url(${regionsud});
+}
 `;
 
 export const ButtonProjects = styled.button`
 color: white;
-border: solid 5px #1d1d1f;
+border: solid 3px #1d1d1f;
 background-image: linear-gradient(120deg, #eb4f56, #9d66e9);
 border-radius: 28px;
-width: 20vh;
+width: 25vh;
 height: 5vh;
+cursor: pointer;
+opacity: 0;
+font-size: 20px;
+font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+&:hover{
+cursor: pointer;
+opacity: 1;
+}
 `;
 
 export const ModalBody = styled.div`

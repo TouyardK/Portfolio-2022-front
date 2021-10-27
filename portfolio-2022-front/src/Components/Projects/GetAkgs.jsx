@@ -3,25 +3,34 @@ import axios from 'axios';
 import styled from 'styled-components';
 import { ButtonProjects } from './GetRegionSud';
 import akgs1 from '../../Assets/akgs1.png';
+import akgs from '../../Assets/akgs.png';
 
 const BodyAkgs = styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
 text-align: center;
-background-image: url(${akgs1});
+background-image: url(${akgs});
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-border: 1px solid hsla(0,0%,51.4%,.16);
+background-color: white;
+border: 3px solid black;
 border-radius: 28px;
-width: 75vh;
+width: 60vh;
 height: 45vh;
+transform-style: preserve-3d;
+transform-origin: top center;
+will-change: transform;
+transform: skewX(.001deg);
+transition: transform .50s ease-in-out;
 &:hover{
-  transform: scale(1.12);
-  transition: all 1s;
-  filter: drop-shadow(0 0 0.95rem white);
-  }
+cursor: pointer;
+transform: translateX(20%);
+will-change: transform;
+transition: transform .65s cubic-bezier(0.18, 0.9, 0.58, 1);
+background-image: url(${akgs1});
+}
 `;
 
 
