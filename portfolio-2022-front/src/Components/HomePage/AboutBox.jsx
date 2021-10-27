@@ -7,6 +7,7 @@ justify-content: center;
 align-items: center;
 height: 45vh;
 width: auto;
+letter-spacing: -.045em;
 font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 `;
 

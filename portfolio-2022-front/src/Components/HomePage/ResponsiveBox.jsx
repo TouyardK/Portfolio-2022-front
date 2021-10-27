@@ -11,10 +11,11 @@ width: 160vh;
 
 export const ContainerImgAndText = styled.div`
 display: flex;
-border-radius: 35px;
+border-radius: 28px;
 background-image: linear-gradient(120deg, #4e68ff, #b726f0);
 height: 40vh;
 width: 160vh;
+letter-spacing: -.045em;
 `;
 
 export const ImgResponsive = styled.img`

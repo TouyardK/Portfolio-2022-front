@@ -8,7 +8,6 @@ import AdditionalSkills from "./AdditionalSkills";
 import ContactMe from "./ContactMe";
 import ProjectStand from "./ProjectStand";
 import ProjectStandContain from "./ProjectStandContain";
-
 import Footer from './Footer';
 
 
@@ -16,6 +15,7 @@ const StyledContainerGlobal = styled.div`
 background-color: #1d1d1f;
 font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 position: absolute;
+letter-spacing: -.045em;
 left: 0;
 right: 0;
 `;
@@ -25,13 +25,13 @@ export default function HomePage () {
         <>
         <StyledContainerGlobal>
             <Header />
-            <AboutBox />
-            <SoftSkills />
-            <SoftSkillsDates />
-            <AdditionalSkills />
-            <ProjectStand />
-            <ProjectStandContain />
-            <ContactMe />
+                <AboutBox />
+                    <SoftSkills />
+                        <SoftSkillsDates />
+                            <AdditionalSkills />
+                         <ProjectStand />
+                    <ProjectStandContain />
+                <ContactMe />
             <Footer />
         </StyledContainerGlobal>
         </>

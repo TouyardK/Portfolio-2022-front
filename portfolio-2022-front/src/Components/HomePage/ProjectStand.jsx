@@ -10,6 +10,7 @@ left: 0;
 right: 0;
 height: 50vh;
 width: auto;
+letter-spacing: -.045em;
 `;
 
 const StyledTitleBox = styled.div`
@@ -26,13 +27,13 @@ font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial
 
 const StyledH1 = styled.h1`
 color: white;
-letter-spacing: 1px;
+letter-spacing: -.045em;
 font-size: 8vh;
 `;
 
 const StyledH2 = styled.h2`
 color: #999999;
-letter-spacing: 2px;
+letter-spacing: -.045em;
 font-size: 4vh;
 `;
 
