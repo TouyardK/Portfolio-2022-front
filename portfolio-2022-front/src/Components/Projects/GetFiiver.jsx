@@ -18,7 +18,7 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 border: 1px solid hsla(0,0%,51.4%,.16);
-border-radius: 35px;
+border-radius: 28px;
 width: 75vh;
 height: 45vh;
 &:hover{
@@ -100,8 +100,7 @@ export default function GetFiiver () {
                         </ContainerImg>
                         <ContainerText>
                              <ModalText>
-                             Nous avons développé un module complétementaire pour le site Fiiver, qui permet à la communautée de créer des évènements pour partager des moments de convivialité.
-                            
+                                Nous avons développé un module complétementaire pour le site Fiiver, qui permet à la communautée de créer des évènements pour partager des moments de convivialité.
                              </ModalText>
                           </ContainerText>
                       </ModalBody>
