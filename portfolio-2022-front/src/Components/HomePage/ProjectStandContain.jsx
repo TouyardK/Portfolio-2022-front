@@ -17,15 +17,15 @@ width: auto;
 const ContainerTop = styled.div`
 display: flex;
 justify-content: space-around;
-width: 160vh;
-height: 50vh;
+width: 128vh;
+height: 49vh;
 `;
 
 const ContainerBottom = styled.div`
 display: flex;
 justify-content: space-around;
-width: 160vh;
-height: auto;
+width: 128vh;
+height: 49vh;
 `;
 
 
@@ -34,12 +34,12 @@ export default function ProjectStandContain () {
         <>
         <GlobalContainer>
             <ContainerTop>
-              <GetRegionSud />
-              <GetFiiver />  
+                <GetRegionSud />
+                <GetFiiver />
             </ContainerTop>
-              <ContainerBottom>
-                <GetOovy />
-                <GetAkgs />
+                <ContainerBottom>
+                  <GetOovy />
+                  <GetAkgs />
               </ContainerBottom>
         </GlobalContainer>
         </>

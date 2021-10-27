@@ -5,63 +5,38 @@ import { ButtonProjects } from './GetRegionSud';
 import fiiver1 from '../../Assets/fiiver1.png'
 import Modal from '../Modal/Modal';
 import useModal from '../Modal/useModal';
+import fiiver from '../../Assets/fiiver.png';
 import fiiver2 from '../../Assets/fiiver2.png';
 import fiiver3 from '../../Assets/fiiver3.png';
+import { ModalBody, ContainerImg, ContainerText, ModalText, ModalImg } from './GetRegionSud';
 
 const BodyFiiver = styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
 text-align: center;
-background-image: url(${fiiver1});
+background-image: url(${fiiver});
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-border: 1px solid hsla(0,0%,51.4%,.16);
+border: 3px solid black;
 border-radius: 28px;
-width: 75vh;
+width: 60vh;
 height: 45vh;
+transform-style: preserve-3d;
+transform-origin: top center;
+will-change: transform;
+transform: skewX(.001deg);
+transition: transform .50s ease-in-out;
 &:hover{
-  transform: scale(1.12);
-  transition: all 1s;
-  filter: drop-shadow(0 0 0.95rem white);
-  }
+cursor: pointer;
+transform: translateY(-20%);
+will-change: transform;
+transition: transform .65s cubic-bezier(0.18, 0.9, 0.58, 1);
+background-image: url(${fiiver1});
+}
 `;
 
-const ModalBody = styled.div`
-display: flex;
-flex-direction: column;
-width: 100%;
-height: 55vh;
-padding: 50px;
-`;
-
-const ContainerImg = styled.div`
-display: flex;
-justify-content: space-around;
-width: 100%;
-height: 35vh;
-`;
-
-const ContainerText = styled.div`
-display: flex;
-width: 100%;
-height: 10vh;
-`;
-
-
-const ModalText = styled.p`
-text-align: center;
-`;
-
-const ModalImg = styled.img`
-height: 35vh;
-width: 48vh;
-&:hover{
-    transform: scale(1.80);
-    transition: all 2s;
-  }
-`;
 
 export default function GetFiiver () {
     const [itemProject, setItemProject] = useState([]);
@@ -98,12 +73,12 @@ export default function GetFiiver () {
                           <ModalImg src={fiiver2} alt="rs3" />
                           <ModalImg src={fiiver3} alt="rs4" />
                         </ContainerImg>
-                        <ContainerText>
-                             <ModalText>
-                                Nous avons développé un module complétementaire pour le site Fiiver, qui permet à la communautée de créer des évènements pour partager des moments de convivialité.
-                             </ModalText>
-                          </ContainerText>
-                      </ModalBody>
+                            <ContainerText>
+                                <ModalText>
+                                    Nous avons développé un module complétementaire pour le site Fiiver, qui permet à la communautée de créer des évènements pour partager des moments de convivialité.
+                                </ModalText>
+                              </ContainerText>
+                          </ModalBody>
                   </Modal>
                 </BodyFiiver>
                 ))}
