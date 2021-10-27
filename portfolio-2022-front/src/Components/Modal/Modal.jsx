@@ -6,8 +6,8 @@ const ModalOverlay = styled.div`
 position: fixed;
 top: 0;
 left: 0;
-width: 100vh;
-height: 100vh;
+width: auto;
+height: auto;
 z-index: 1040;
 background-color: rgba(0, 0, 0, 0.5);
 `;
@@ -27,11 +27,12 @@ const ModalWrapper = styled.div`
 
 const ModalContain = styled.div`
   z-index: 100;
-  background: #b3b3b3;
+  border: solid 10px black;
+  background: #38383a;
   position: relative;
   margin: auto;
-  border-radius: 35px;
-  width: 80%;
+  border-radius: 28px;
+  width: auto;
   height: auto;
   padding: 1rem;
 `;
@@ -39,7 +40,9 @@ const ModalContain = styled.div`
 const ModalHeader = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 15px;
+  height: auto;
+
 `;
 
 const ModalBody = styled.div`
@@ -52,14 +55,15 @@ height: 60vh;
 const ModalCloseButton = styled.button`
   font-size: 1.4rem;
   font-weight: 700;
-  color: #000;
+  color: white;
   cursor: pointer;
   border: none;
   background: transparent;
 `;
 
 const ModalTitleh4 = styled.h4`
-
+font-size: 55px;
+color: white;
 `;
 
 const Modal = ({ isOpen, hide, title, ...props }) =>

@@ -56,36 +56,41 @@ opacity: 1;
 
 export const ModalBody = styled.div`
 display: flex;
+justify-content: center;
 flex-direction: column;
-width: 100%;
+width: auto;
 height: 55vh;
-padding: 50px;
 `;
 
 export const ContainerImg = styled.div`
 display: flex;
 justify-content: space-around;
-width: 100%;
+width: auto;
 height: 35vh;
 `;
 
 export const ContainerText = styled.div`
 display: flex;
-width: 100%;
+width: auto;
 height: 10vh;
 `;
 
 
 export const ModalText = styled.p`
 text-align: center;
+color: white;
+font-size: 35px;
+font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 `;
 
 export const ModalImg = styled.img`
-height: 35vh;
-width: 48vh;
+height: 25vh;
+width: 49vh;
+border: solid 3px white;
 &:hover{
-    transform: scale(1.80);
+    transform: scale(1.20);
     transition: all 2s;
+    border: solid 4px #4f0062;
   }
 `;
 
