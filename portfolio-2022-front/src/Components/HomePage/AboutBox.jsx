@@ -15,7 +15,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 text-align: center;
-border-radius: 35px;
+border-radius: 28px;
 position: absolute;
 width: 160vh;
 height: auto;

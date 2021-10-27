@@ -19,7 +19,7 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 border: 1px solid hsla(0,0%,51.4%,.16);
-border-radius: 35px;
+border-radius: 28px;
 width: 75vh;
 height: 45vh;
 &:hover{
@@ -33,7 +33,7 @@ export const ButtonProjects = styled.button`
 color: white;
 border: solid 5px #1d1d1f;
 background-image: linear-gradient(120deg, #eb4f56, #9d66e9);
-border-radius: 35px;
+border-radius: 28px;
 width: 20vh;
 height: 5vh;
 `;
@@ -111,12 +111,12 @@ export default function GetRegionSud () {
                           <ModalImg src={rs3} alt="rs3" />
                           <ModalImg src={rs4} alt="rs4" />
                         </ContainerImg>
-                        <ContainerText>
-                             <ModalText>
-                            Conception d'un calculateur d'impact environnemental, qui contient un questionnaire avec des recommandations qui varient en fonction des réponses, un système de notation en temps réel, un
-                            espace administrateur et user.
-                             </ModalText>
-                          </ContainerText>
+                            <ContainerText>
+                              <ModalText>
+                                  Conception d'un calculateur d'impact environnemental, qui contient un questionnaire avec des recommandations qui varient en fonction des réponses, un système de notation en temps réel, un
+                                  espace administrateur et user.
+                              </ModalText>
+                            </ContainerText>
                       </ModalBody>
                   </Modal>
                 </BodyProjects>

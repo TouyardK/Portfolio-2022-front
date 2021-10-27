@@ -13,7 +13,7 @@ height: 60vh;
 
 const ContainerImgAndText = styled.div`
 display: flex;
-border-radius: 35px;
+border-radius: 28px;
 height: 50vh;
 width: 160vh;
 `;
