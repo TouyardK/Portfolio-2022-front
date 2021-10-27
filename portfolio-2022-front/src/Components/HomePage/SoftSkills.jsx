@@ -27,13 +27,13 @@ font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial
 
 const StyledH1 = styled.h1`
 color: white;
-letter-spacing: 10px;
+letter-spacing: -.045em;
 font-size: 8vh;
 `;
 
 const StyledH2 = styled.h2`
 color: #999999;
-letter-spacing: 8px;
+letter-spacing: -.045em;
 font-size: 4vh;
 `;
 

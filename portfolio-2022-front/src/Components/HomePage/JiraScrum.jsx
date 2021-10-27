@@ -16,6 +16,7 @@ display: flex;
 border-radius: 28px;
 height: 50vh;
 width: 160vh;
+letter-spacing: -.045em;
 `;
 
 const ImgResponsive = styled.img`
