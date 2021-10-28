@@ -59,14 +59,15 @@ display: flex;
 justify-content: center;
 flex-direction: column;
 width: auto;
-height: 55vh;
+height: 45vh;
 `;
 
 export const ContainerImg = styled.div`
 display: flex;
 justify-content: space-around;
+align-items: center;
 width: auto;
-height: 35vh;
+height: 30vh;
 `;
 
 export const ContainerText = styled.div`
@@ -86,11 +87,11 @@ font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial
 export const ModalImg = styled.img`
 height: 25vh;
 width: 49vh;
-border: solid 3px white;
+border: solid 4px #1d1d1f;
 &:hover{
     transform: scale(1.20);
     transition: all 2s;
-    border: solid 4px #4f0062;
+    border: solid 4px whitesmoke;
   }
 `;
 

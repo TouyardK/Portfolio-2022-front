@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import styled from "styled-components";
+import close from '../../Assets/cancel.png';
+import pixel from '../../Assets/pixel.png';
 
 const ModalOverlay = styled.div`
 position: fixed;
@@ -28,7 +30,7 @@ const ModalWrapper = styled.div`
 const ModalContain = styled.div`
   z-index: 100;
   border: solid 10px black;
-  background: #38383a;
+  background-image: url(${pixel}),linear-gradient(45deg,#eb4f56, #9d66e9);
   position: relative;
   margin: auto;
   border-radius: 28px;
@@ -40,7 +42,7 @@ const ModalContain = styled.div`
 const ModalHeader = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 15px;
+  width: 150vh;
   height: auto;
 
 `;
@@ -53,12 +55,19 @@ height: 60vh;
 `;
 
 const ModalCloseButton = styled.button`
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: white;
+  display: flex;
+  align-items: center;
+  height: 5vh;
+  width: 5vh;
+  padding: 10vh;
   cursor: pointer;
   border: none;
   background: transparent;
+`;
+
+const CloseImg = styled.img`
+height: 6vh;
+width: 6vh;
 `;
 
 const ModalTitleh4 = styled.h4`
@@ -75,7 +84,9 @@ isOpen
                             <ModalContain>
                                     <ModalHeader>
                                         <ModalTitleh4>{title}</ModalTitleh4>
-                                        <ModalCloseButton type="button" onClick={hide}>X</ModalCloseButton>
+                                        <ModalCloseButton type="button" onClick={hide}>
+                                          <CloseImg src={close} alt="close" />
+                                        </ModalCloseButton>
                                     </ModalHeader>
                                         <ModalBody>{props.children}</ModalBody>
                             </ModalContain>
