@@ -1,13 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import styled from "styled-components";
+import close from '../../Assets/cancel.png';
+import pixel from '../../Assets/pixel.png';
 
 const ModalOverlay = styled.div`
 position: fixed;
 top: 0;
 left: 0;
-width: 100vh;
-height: 100vh;
+width: auto;
+height: auto;
 z-index: 1040;
 background-color: rgba(0, 0, 0, 0.5);
 `;
@@ -27,11 +29,12 @@ const ModalWrapper = styled.div`
 
 const ModalContain = styled.div`
   z-index: 100;
-  background: #b3b3b3;
+  border: solid 10px black;
+  background-image: url(${pixel}),linear-gradient(45deg,#eb4f56, #9d66e9);
   position: relative;
   margin: auto;
-  border-radius: 35px;
-  width: 80%;
+  border-radius: 28px;
+  width: auto;
   height: auto;
   padding: 1rem;
 `;
@@ -39,7 +42,9 @@ const ModalContain = styled.div`
 const ModalHeader = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  width: 150vh;
+  height: auto;
+
 `;
 
 const ModalBody = styled.div`
@@ -50,16 +55,24 @@ height: 60vh;
 `;
 
 const ModalCloseButton = styled.button`
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #000;
+  display: flex;
+  align-items: center;
+  height: 5vh;
+  width: 5vh;
+  padding: 10vh;
   cursor: pointer;
   border: none;
   background: transparent;
 `;
 
-const ModalTitleh4 = styled.h4`
+const CloseImg = styled.img`
+height: 6vh;
+width: 6vh;
+`;
 
+const ModalTitleh4 = styled.h4`
+font-size: 55px;
+color: white;
 `;
 
 const Modal = ({ isOpen, hide, title, ...props }) =>
@@ -71,7 +84,9 @@ isOpen
                             <ModalContain>
                                     <ModalHeader>
                                         <ModalTitleh4>{title}</ModalTitleh4>
-                                        <ModalCloseButton type="button" onClick={hide}>X</ModalCloseButton>
+                                        <ModalCloseButton type="button" onClick={hide}>
+                                          <CloseImg src={close} alt="close" />
+                                        </ModalCloseButton>
                                     </ModalHeader>
                                         <ModalBody>{props.children}</ModalBody>
                             </ModalContain>

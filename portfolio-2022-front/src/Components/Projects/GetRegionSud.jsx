@@ -56,36 +56,42 @@ opacity: 1;
 
 export const ModalBody = styled.div`
 display: flex;
+justify-content: center;
 flex-direction: column;
-width: 100%;
-height: 55vh;
-padding: 50px;
+width: auto;
+height: 45vh;
 `;
 
 export const ContainerImg = styled.div`
 display: flex;
 justify-content: space-around;
-width: 100%;
-height: 35vh;
+align-items: center;
+width: auto;
+height: 30vh;
 `;
 
 export const ContainerText = styled.div`
 display: flex;
-width: 100%;
+width: auto;
 height: 10vh;
 `;
 
 
 export const ModalText = styled.p`
 text-align: center;
+color: white;
+font-size: 35px;
+font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 `;
 
 export const ModalImg = styled.img`
-height: 35vh;
-width: 48vh;
+height: 25vh;
+width: 49vh;
+border: solid 4px #1d1d1f;
 &:hover{
-    transform: scale(1.80);
+    transform: scale(1.20);
     transition: all 2s;
+    border: solid 4px whitesmoke;
   }
 `;
 
