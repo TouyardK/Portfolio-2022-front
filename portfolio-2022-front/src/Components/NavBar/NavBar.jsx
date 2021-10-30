@@ -7,7 +7,7 @@ export default function NavBar () {
         {
             id: 1,
             content: 'TOUYARD KEVIN',
-            path: '/',
+            path: '/home',
         },
         {
             id: 2,
