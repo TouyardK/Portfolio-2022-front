@@ -29,15 +29,14 @@ border-radius: 50%;
 filter: drop-shadow(0 0 0.95rem  #9d66e9);
 `;
 
-
 export default function Photo () {
     return (
     <>
-    <StyledContainer>
-        <StyledContainerPhoto>
-            <StyledPhoto src={PhotoK2} alt="Kevin" />
-        </StyledContainerPhoto>
-    </StyledContainer>
+                    <StyledContainer>
+                        <StyledContainerPhoto>
+                            <StyledPhoto src={PhotoK2} alt="Kevin" />
+                        </StyledContainerPhoto>
+                    </StyledContainer>
     </>
     );
 }

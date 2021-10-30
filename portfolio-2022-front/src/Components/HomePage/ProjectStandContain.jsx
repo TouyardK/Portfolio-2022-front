@@ -32,16 +32,16 @@ height: 49vh;
 export default function ProjectStandContain () {
     return (
         <>
-        <GlobalContainer>
-            <ContainerTop>
-                <GetRegionSud />
-                <GetFiiver />
-            </ContainerTop>
-                <ContainerBottom>
-                  <GetOovy />
-                  <GetAkgs />
-              </ContainerBottom>
-        </GlobalContainer>
+            <GlobalContainer>
+                    <ContainerTop>
+                        <GetRegionSud />
+                        <GetFiiver />
+                    </ContainerTop>
+                        <ContainerBottom>
+                            <GetOovy />
+                            <GetAkgs />
+                        </ContainerBottom>
+            </GlobalContainer>
         </>
     )
 }

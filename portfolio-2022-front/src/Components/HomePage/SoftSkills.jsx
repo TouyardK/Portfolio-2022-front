@@ -1,16 +1,14 @@
 import React from 'react';
 import styled from "styled-components";
 
+
 const StyledTitleContainer = styled.div`
 display: flex;
 background-color: black;
 justify-content: center;
 align-items: center;
-border: solid 1px;
 left: 0;
 right: 0;
-height: auto;
-width: auto;
 `;
 
 const StyledTitleBox = styled.div`
@@ -47,18 +45,17 @@ height: 3px;
 
 
 
-
 export default function SoftSkills () {
     return (
         <>
-            <StyledTitleContainer>
-                <StyledTitleBox>
-                    <StyledH2>Soft Skills</StyledH2>
+        <StyledTitleContainer>
+            <StyledTitleBox>
+                <StyledH2>Soft Skills</StyledH2>
                     <LineTop />
-                    <StyledH1>JavaScript developper</StyledH1>
-                    <StyledH1>Front-end Designer.</StyledH1>
-                </StyledTitleBox>
-            </StyledTitleContainer>
+                        <StyledH1>JavaScript developper</StyledH1>
+                     <StyledH1>Front-end Designer.</StyledH1>
+            </StyledTitleBox>
+        </StyledTitleContainer>
         </>
     );
 }
