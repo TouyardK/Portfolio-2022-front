@@ -17,15 +17,15 @@ width: auto;
 const ContainerTop = styled.div`
 display: flex;
 justify-content: space-around;
-width: 128vh;
-height: 49vh;
+width: 90vh;
+height: 30vh;
 `;
 
 const ContainerBottom = styled.div`
 display: flex;
 justify-content: space-around;
-width: 128vh;
-height: 49vh;
+width: 90vh;
+height: 30vh;
 `;
 
 

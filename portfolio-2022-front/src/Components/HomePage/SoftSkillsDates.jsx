@@ -36,7 +36,7 @@ const StyledLeftBox = styled.div`
 
 const StyledRightBox = styled.div`
   display: flex;
-  width: auto;
+  width: 50vh;
   height: 42vh;
 `;
 
