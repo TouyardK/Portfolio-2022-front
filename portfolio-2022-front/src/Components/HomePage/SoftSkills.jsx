@@ -19,7 +19,7 @@ flex-direction: column;
 background-color: black;
 border-radius: 25px;
 width: 150vh;
-height: 50vh;
+height: 38vh;
 line-height: 1vh;
 padding-left: 20vh;
 font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;

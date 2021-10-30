@@ -8,6 +8,7 @@ import AdditionalSkills from "./AdditionalSkills";
 import ContactMe from "./ContactMe";
 import ProjectStand from "./ProjectStand";
 import ProjectStandContain from "./ProjectStandContain";
+import Partner from "../Partner/Partner";
 import Footer from './Footer';
 
 
@@ -31,6 +32,7 @@ export default function HomePage () {
                             <AdditionalSkills />
                          <ProjectStand />
                     <ProjectStandContain />
+                <Partner />
                 <ContactMe />
             <Footer />
         </StyledContainerGlobal>

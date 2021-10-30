@@ -76,7 +76,6 @@ width: auto;
 height: 10vh;
 `;
 
-
 export const ModalText = styled.p`
 text-align: center;
 color: white;
@@ -94,9 +93,6 @@ border: solid 4px #1d1d1f;
     border: solid 4px whitesmoke;
   }
 `;
-
-
-
 
 export default function GetRegionSud () {
     const [itemProject, setItemProject] = useState([]);
