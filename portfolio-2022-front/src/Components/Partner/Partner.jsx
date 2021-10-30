@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import PartnerCitation from "./PartnerCitation";
-import PartnerBox from "./PartnerBox";
 import { Animator, ScrollContainer, ScrollPage, batch, FadeIn, StickyIn, ZoomIn } from "react-scroll-motion";
 
 const PartnerMainContainer = styled.div`
+display: block;
 background-color: black;
 height:auto;
 `;
@@ -19,7 +19,6 @@ export default function Partner () {
                         <Animator animation={ZoomInScrollOut}>
                             <PartnerCitation />
                         </Animator>
-                        <PartnerBox />
                     </ScrollPage>        
                 </ScrollContainer>
             </PartnerMainContainer>

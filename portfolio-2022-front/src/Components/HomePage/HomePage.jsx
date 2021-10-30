@@ -17,6 +17,7 @@ background-color: #1d1d1f;
 font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 position: absolute;
 letter-spacing: -.045em;
+height: auto;
 left: 0;
 right: 0;
 `;
