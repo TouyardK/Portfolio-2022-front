@@ -7,7 +7,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 margin-top: 20px;
-height: 35vh;
+height: 30vh;
 `;
 
 const StyledContainerPhoto = styled.div`

@@ -6,7 +6,7 @@ import { Animator, ScrollContainer, ScrollPage, batch, FadeIn, StickyIn, ZoomIn 
 const ContactMainContainer = styled.div`
 display: block;
 background-color: black;
-height:150vh;
+height:110vh;
 `;
 
 
