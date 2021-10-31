@@ -5,9 +5,9 @@ import { StyledLink } from '../Styles/StyledNavBar';
 export const StyledNavBarItem = styled.div`
 display: inline-block;
 list-style: none;
-font-size: 0.6rem;
+font-size: 0.95rem;
 font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-letter-spacing: 7px;
+letter-spacing: -.025em;
 padding: 10px 85px;
 font-weight: lighter;
 text-align: center;

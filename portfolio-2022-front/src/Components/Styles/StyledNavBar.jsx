@@ -8,7 +8,7 @@ position: fixed;
 left: 0;
 right: 0;
 top: 0;
-background-color: black;
+background-color: rgba(29, 29, 31, 0.7);
 bottom: auto;
 z-index: 100;
 padding-top: 10px;
@@ -17,27 +17,28 @@ justify-content: center;
 border-bottom: solid 1px white;
 width: auto;
 height: 6vh;
-font-family: 'Oswald', sans-serif;
+font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 `;
 
 export const StyledLink = styled(Link)`
 display: flex;
 text-decoration: none;
 padding: 15px;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px rgba(255,255,255,.15) solid;
-  box-shadow: 0px 3px 10px rgba(255,255,255,.1);
-  color: #ffffff;
-  width: max-content;
-  float: left;
-  margin-left: 15px;
-  position: relative;
-  transition: box-shadow .5s ease 0s, top .5s ease 0s, border .5s ease 0s, color .5s ease 0s;
-  top: 0;
-&:hover {
+color: #ffffff;
+width: max-content;
+float: left;
+margin-left: 15px;
+position: relative;
+font-weight: 900;
+top: 0;
+&:hover,
+&:focus {
   cursor: pointer;
-  box-shadow: 0px 6px 15px #ff00007f;
-  top: -3px;
-  border: 1px #d900ff4c solid;
+  background: 
+    linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
 }
 `;
