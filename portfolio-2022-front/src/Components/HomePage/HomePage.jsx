@@ -24,7 +24,6 @@ right: 0;
 
 export default function HomePage () {
     return (
-        <>
         <StyledContainerGlobal>
             <Header />
                 <AboutBox />
@@ -33,10 +32,9 @@ export default function HomePage () {
                             <AdditionalSkills />
                          <ProjectStand />
                     <ProjectStandContain />
-                <Partner />
-                    <Contact />
+                    <Partner />
+                <Contact />
             <Footer />
         </StyledContainerGlobal>
-        </>
     );
 }
