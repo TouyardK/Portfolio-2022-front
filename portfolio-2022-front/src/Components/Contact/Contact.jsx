@@ -15,11 +15,11 @@ const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
 export default function ContactContainer () {
     return(
         <>
-            <ContactMainContainer>
+            <ContactMainContainer id="section-contact">
                 <ScrollContainer>
                     <ScrollPage page={6}>
                         <Animator animation={ZoomInScrollOut}>
-                            <ContactTitle />
+                            <ContactTitle/>
                         </Animator>
                     </ScrollPage>        
                 </ScrollContainer>

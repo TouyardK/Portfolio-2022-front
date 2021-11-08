@@ -24,7 +24,7 @@ right: 0;
 
 export default function HomePage () {
     return (
-        <StyledContainerGlobal>
+        <StyledContainerGlobal  id="section-home">
             <Header />
                 <AboutBox />
                     <SoftSkills />

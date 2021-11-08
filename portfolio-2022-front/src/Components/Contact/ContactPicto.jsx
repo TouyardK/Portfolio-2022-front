@@ -7,22 +7,28 @@ import facebook from '../../Assets/facebook.png'
 const PictoContainer = styled.div`
 display: flex;
 justify-content: space-around;
-width: 30%;
+width: 40%;
 `;
 
 const PictoLink = styled.img`
 background-color: whitesmoke;
-height: 40px;
-width: 40px;
+height: 30px;
+width: 30px;
 border-radius: 28px;
 `;
 
 export default function ContactTitle () {
     return (
             <PictoContainer>
-                <PictoLink src={github} alt="git"/>
-                <PictoLink src={facebook} alt="fb" />
-                <PictoLink src={linkedin} alt="link" />
+                <a href="https://github.com/TouyardK" >
+                    <PictoLink src={github} alt="git"/>
+                </a>
+                <a href="https://www.facebook.com/niss.ka.754/">
+                    <PictoLink src={facebook} alt="fb" />
+                </a>
+                <a href="https://www.linkedin.com/in/kevin-touyard/">
+                    <PictoLink src={linkedin} alt="link" />
+                </a>
             </PictoContainer>
     );
 }
