@@ -8,7 +8,7 @@ justify-content: center;
 align-items: center;
 left: 0;
 right: 0;
-height: 35vh;
+height: auto;
 width: auto;
 letter-spacing: -.045em;
 `;
@@ -48,8 +48,7 @@ height: 3px;
 
 export default function ProjectStand () {
     return (
-        <>
-           <StyledTitleContainer id="section-projects">
+            <StyledTitleContainer  id="section-projects">
                 <StyledTitleBox>
                     <StyledH2>Projects</StyledH2>
                     <LineTop />
@@ -57,6 +56,5 @@ export default function ProjectStand () {
                     <StyledH1>Some projects I worked on.</StyledH1>
                 </StyledTitleBox>
             </StyledTitleContainer>
-        </>
     )
 }

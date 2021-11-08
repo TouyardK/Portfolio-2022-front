@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import PartnerBox from "./PartnerBox";
+import ResumeBox from "./ResumeBox";
 
 const CitationContainer = styled.div`
 display: flex;
@@ -33,12 +33,12 @@ position: relative;
 }
 `;
 
-export default function PartnerCitation () {
+export default function ResumeCitation () {
     return (
             <CitationContainer>
-                <CitationText>Alone we go faster,</CitationText>
-                <CitationText>Together we go further...</CitationText>
-                <PartnerBox />
+                <CitationText>Have a look at my resume</CitationText>
+                <CitationText>Here</CitationText>
+                <ResumeBox />
             </CitationContainer>
     );
 }

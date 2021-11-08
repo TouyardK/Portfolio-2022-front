@@ -47,7 +47,6 @@ const StyledBrAbout = styled.br`
 
 export default function AboutBox () {
     return (
-        <>
             <StyledAboutBoxContainer>
                 <StyledAboutBox>
                     <StyledTitleAbout>Introduction :</StyledTitleAbout>
@@ -60,6 +59,5 @@ export default function AboutBox () {
                                     Do not hesitate to get in touch with me for any further inquiries.</StyledTextAbout>
                 </StyledAboutBox>
             </StyledAboutBoxContainer>
-        </>
     );
 }

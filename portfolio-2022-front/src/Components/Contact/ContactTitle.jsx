@@ -37,7 +37,7 @@ position: relative;
 export default function ContactTitle () {
     return (
             <TitleContainer>
-                <ContactText>You can found me on :</ContactText>
+                <ContactText>You can find me on :</ContactText>
                 <ContactPicto />
             </TitleContainer>
     );

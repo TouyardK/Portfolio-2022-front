@@ -1,7 +1,6 @@
 import React from "react";
 import { StyledNavBar } from '../Styles/StyledNavBar';
 import  NavBarItem  from "./NavBarItem";
-import TouyardK from '../../Assets/TOUYARD-Kévin.pdf';
 
 export default function NavBar () {
     const navbarLinks = [
@@ -18,7 +17,7 @@ export default function NavBar () {
         {
             id: 3,
             content: 'RESUME',
-            path: '/',
+            path: '/home/#section-resume',
         },
         {
             id: 4,

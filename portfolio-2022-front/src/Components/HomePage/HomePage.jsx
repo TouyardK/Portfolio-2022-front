@@ -7,7 +7,7 @@ import SoftSkillsDates from "./SoftSkillsDates";
 import AdditionalSkills from "./AdditionalSkills";
 import ProjectStand from "./ProjectStand";
 import ProjectStandContain from "./ProjectStandContain";
-import Partner from "../Partner/Partner";
+import Resume from "../Resume/Resume";
 import Contact from '../Contact/Contact';
 import Footer from './Footer';
 
@@ -18,6 +18,7 @@ font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial
 position: absolute;
 letter-spacing: -.045em;
 height: auto;
+top: 0;
 left: 0;
 right: 0;
 `;
@@ -30,11 +31,11 @@ export default function HomePage () {
                     <SoftSkills />
                         <SoftSkillsDates />
                             <AdditionalSkills />
-                         <ProjectStand />
-                    <ProjectStandContain />
-                    <Partner />
-                <Contact />
-            <Footer />
+                                    <ProjectStand />
+                                        <ProjectStandContain />
+                                    <Resume />
+                                <Contact />
+                            <Footer />
         </StyledContainerGlobal>
     );
 }
