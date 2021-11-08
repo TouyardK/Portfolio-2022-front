@@ -49,7 +49,7 @@ height: 3px;
 export default function ProjectStand () {
     return (
         <>
-           <StyledTitleContainer>
+           <StyledTitleContainer id="section-projects">
                 <StyledTitleBox>
                     <StyledH2>Projects</StyledH2>
                     <LineTop />

@@ -30,7 +30,6 @@ transform: skewX(.001deg);
 transition: transform .50s ease-in-out;
 &:hover{
 cursor: pointer;
-transform: translateY(-20%);
 will-change: transform;
 transition: transform .65s cubic-bezier(0.18, 0.9, 0.58, 1);
 background-image: url(${regionsud});
@@ -131,8 +130,10 @@ export default function GetRegionSud () {
                         </ContainerImg>
                             <ContainerText>
                               <ModalText>
-                                  Conception d'un calculateur d'impact environnemental, qui contient un questionnaire avec des recommandations qui varient en fonction des réponses, un système de notation en temps réel, un
-                                  espace administrateur et user.
+                                  Conception d'un calculateur d'impact environnemental, qui contient un questionnaire
+                                   avec des recommandations qui varient en fonction des réponses,
+                                   un système de notation en temps réel, un
+                                   espace administrateur et user.
                               </ModalText>
                             </ContainerText>
                       </ModalBody>

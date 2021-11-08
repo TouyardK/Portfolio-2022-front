@@ -30,7 +30,6 @@ transform: skewX(.001deg);
 transition: transform .50s ease-in-out;
 &:hover{
 cursor: pointer;
-transform: translateX(-20%);
 will-change: transform;
 transition: transform .65s cubic-bezier(0.18, 0.9, 0.58, 1);
 background-image: url(${oovy1});

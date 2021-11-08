@@ -1,18 +1,19 @@
 import React from "react";
 import { StyledNavBar } from '../Styles/StyledNavBar';
 import  NavBarItem  from "./NavBarItem";
+import TouyardK from '../../Assets/TOUYARD-Kévin.pdf';
 
 export default function NavBar () {
     const navbarLinks = [
         {
             id: 1,
             content: 'TOUYARD KEVIN',
-            path: '/home',
+            path: '/home/#section-home',
         },
         {
             id: 2,
             content: 'PROJECTS',
-            path: '/',
+            path: '/home/#section-projects',
         },
         {
             id: 3,
@@ -22,7 +23,7 @@ export default function NavBar () {
         {
             id: 4,
             content: 'CONTACT',
-            path: '/',
+            path: '#section-contact',
         },
     ];
     return (

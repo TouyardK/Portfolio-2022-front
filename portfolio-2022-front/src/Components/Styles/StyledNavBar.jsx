@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 export const StyledNavBar = styled.nav`
 display: flex;
@@ -20,7 +20,7 @@ height: 6vh;
 font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 `;
 
-export const StyledLink = styled(Link)`
+export const StyledLink = styled(HashLink)`
 display: flex;
 text-decoration: none;
 padding: 15px;

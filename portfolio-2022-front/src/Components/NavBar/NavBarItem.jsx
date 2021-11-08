@@ -18,7 +18,7 @@ export default function NavBarItem ({ id, content, path }) {
     return (
         <StyledNavBarItem>
             <li>
-            <StyledLink key={id} to={path}> 
+            <StyledLink key={id} smooth to={path}>
                 {content}
             </StyledLink>
             </li>
