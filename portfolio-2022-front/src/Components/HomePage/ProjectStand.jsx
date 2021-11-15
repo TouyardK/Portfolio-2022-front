@@ -51,10 +51,10 @@ export default function ProjectStand () {
             <StyledTitleContainer  id="section-projects">
                 <StyledTitleBox>
                     <StyledH2>Projects</StyledH2>
-                    <LineTop />
-                    <StyledH1>A selection of</StyledH1>
-                    <StyledH1>Some projects I worked on.</StyledH1>
-                </StyledTitleBox>
+                        <LineTop />
+                            <StyledH1>A selection of</StyledH1>
+                                <StyledH1>Some projects I worked on.</StyledH1>
+                    </StyledTitleBox>
             </StyledTitleContainer>
     )
 }

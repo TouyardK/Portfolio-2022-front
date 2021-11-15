@@ -30,7 +30,7 @@ export default function ResumeBox () {
     return (
         <ContainerGlobal>
             <ResumeContainer>
-                <a href={TouyardK} target="_blank">
+                <a href={TouyardK}>
                     <ResumeImg src={cvimg} alt="cv" />
                 </a>
             </ResumeContainer>
