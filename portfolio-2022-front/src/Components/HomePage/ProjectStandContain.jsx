@@ -31,7 +31,6 @@ height: 30vh;
 
 export default function ProjectStandContain () {
     return (
-        <>
             <GlobalContainer>
                     <ContainerTop>
                         <GetRegionSud />
@@ -42,6 +41,5 @@ export default function ProjectStandContain () {
                             <GetAkgs />
                         </ContainerBottom>
             </GlobalContainer>
-        </>
     )
 }

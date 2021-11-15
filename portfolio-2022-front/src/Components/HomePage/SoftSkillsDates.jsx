@@ -9,6 +9,7 @@ import css3 from '../../Assets/css.png';
 import html from '../../Assets/html.png';
 import vue from '../../Assets/vue.svg';
 import firebase from '../../Assets/firebase-icon.svg';
+import { device } from '../Styles/device';
 
 const StyledSoftSkillsDatesContainer = styled.div`
   display: flex;
@@ -16,6 +17,18 @@ const StyledSoftSkillsDatesContainer = styled.div`
   justify-content: space-around;
   height: 70vh;
   font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  @media ${device.mobileS}{
+    flex-direction: column;
+    align-items: center;
+    height: 63vh;
+  }
+
+  @media ${device.tablet}{
+  }
+
+  @media ${device.desktop}{
+
+  }
 `;
 
 const StyledLeftBox = styled.div`
@@ -29,15 +42,21 @@ const StyledLeftBox = styled.div`
   border: 1px solid hsla(0, 0%, 51.4%, 0.16);
   border-radius: 28px;
   width: 75vh;
-  height: 42vh;
+  height: 43vh;
   padding: 28px;
   line-height: 1.1;
+  @media ${device.mobileS}{
+  height: 25vh;
+  width: auto;
+  }
 `;
 
 const StyledRightBox = styled.div`
   display: flex;
   width: 50vh;
-  height: 42vh;
+  @media ${device.mobileS}{
+  width: auto;
+  }
 `;
 
 const StyledCaseRepartition = styled.div`
@@ -46,6 +65,10 @@ const StyledCaseRepartition = styled.div`
   justify-content: space-between;
   width: 20vh;
   height: 48vh;
+  @media ${device.mobileS}{
+  height: 19vh;
+  width: auto;
+  }
 `;
 
 const StyledLittleCase = styled.div`
@@ -57,21 +80,49 @@ const StyledLittleCase = styled.div`
   border-radius: 28px;
   height: 130px;
   width: 130px;
+  @media ${device.mobileS}{
+  height: 70px;
+  width: 70px;
+  }
+
+  @media ${device.tablet}{
+  }
+
+  @media ${device.desktop}{
+
+  }
 `;
 
 const Styledh3 = styled.h3`
   color: white;
   font-size: 38px;
+  @media ${device.mobileS}{
+ font-size: 20px;
+  }
 `;
 
 const StyledText = styled.p`
   color: #a3a3a3;
   font-size: 30px;
+  @media ${device.mobileS}{
+ font-size: 17px;
+  }
 `;
 
 const StyledPicto = styled.img`
   height: 90px;
   width: 90px;
+  @media ${device.mobileS}{
+  height: 50px;
+  width: 50px;
+  }
+
+  @media ${device.tablet}{
+  }
+
+  @media ${device.desktop}{
+
+  }
 `;
 
 const Line = styled.div`
