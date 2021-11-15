@@ -1,21 +1,21 @@
 import React from "react";
 import styled from "styled-components";
-import github from '../../Assets/github.png'
-import linkedin from '../../Assets/linkedin.png'
-import facebook from '../../Assets/facebook.png'
+import github from '../../Assets/github.png';
+import linkedin from '../../Assets/linkedin.png';
+import facebook from '../../Assets/facebook.png';
 
 const PictoContainer = styled.div`
 display: flex;
 justify-content: space-around;
 width: 40%;
+height: auto;
 `;
 
 const PictoLink = styled.img`
-background-color: whitesmoke;
 height: 30px;
 width: 30px;
-border-radius: 28px;
 `;
+
 
 export default function ContactTitle () {
     return (
