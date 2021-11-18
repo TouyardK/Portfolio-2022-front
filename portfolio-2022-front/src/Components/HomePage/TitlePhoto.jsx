@@ -7,8 +7,6 @@ display: flex;
 flex-direction: column;
 align-items: center;
 line-height: 0.9vh;
-left: 0;
-right: 0;
 font-weight: 700;
 text-align: center;
 text-transform: uppercase;
@@ -36,7 +34,7 @@ letter-spacing: -.045em;
 font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 @media ${device.mobileS}{
 padding: 17px;
-font-size: 0.9rem;
+font-size: 1.5rem;
   }
 `;
 
@@ -45,8 +43,8 @@ font-size: 3rem;
 letter-spacing: -.045em;
 font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 @media ${device.mobileS}{
-padding: 17px;
-font-size: 0.85rem;
+padding: 5px;
+font-size: 0.95rem;
   }
 `;
 

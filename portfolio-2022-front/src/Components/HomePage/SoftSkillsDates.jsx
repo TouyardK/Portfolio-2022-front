@@ -15,20 +15,14 @@ const StyledSoftSkillsDatesContainer = styled.div`
   display: flex;
   background-color: black;
   justify-content: space-around;
-  height: 70vh;
+  height: 80vh;
   font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  @media ${device.mobileS}{
+  @media only screen and (max-width: 768px){
     flex-direction: column;
     align-items: center;
-    height: 63vh;
-  }
+    height: 10vh;
+}
 
-  @media ${device.tablet}{
-  }
-
-  @media ${device.desktop}{
-
-  }
 `;
 
 const StyledLeftBox = styled.div`

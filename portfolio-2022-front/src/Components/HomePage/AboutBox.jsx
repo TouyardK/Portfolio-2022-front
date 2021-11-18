@@ -18,24 +18,16 @@ justify-content: column;
 border-radius: 28px;
 position: relative;
 width: 160vh;
-height: 35vh;
+height: auto;
 outline: none;
 border: none;
 box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 background-color: #1d1d1f;
 background-image: linear-gradient(120deg, #eb4f56, #9d66e9);
 box-shadow: 0 0 10px 5px;
-@media ${device.mobileS}{
-    width: 38vh;
-    height: 54vh;
-  }
-
-  @media ${device.tablet}{
-  }
-
-  @media ${device.desktop}{
-
-  }
+@media only screen and (max-width: 768px){
+  word-wrap: break-word;
+}
 `;
 
 const StyledTitleAbout = styled.h2`
@@ -43,33 +35,11 @@ color: whitesmoke;
 font-size: 3.5vh;
 height: 0.8vh;
 text-decoration: underline #ffffff;
-@media ${device.mobileS}{
-font-size: 1rem;
-height: 3vh;
-  }
-
-  @media ${device.tablet}{
-  }
-
-  @media ${device.desktop}{
-
-  }
 `;
 
 const StyledTextAbout = styled.p`
 color: whitesmoke;
 font-size: 2.5vh;
-@media ${device.mobileS}{
-font-size: 1rem;
-height: 3vh;
-  }
-
-  @media ${device.tablet}{
-  }
-
-  @media ${device.desktop}{
-
-  }
 `;
 
 const StyledBrAbout = styled.br`
