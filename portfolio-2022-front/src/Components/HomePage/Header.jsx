@@ -1,24 +1,25 @@
 import React from 'react';
-import NavBar from '../NavBar/NavBar';
+import styled from 'styled-components';
 import Photo from '../HomePage/Photo';
-import TitlePhoto from './TitlePhoto';
 import { Animator, ScrollContainer, ScrollPage, batch, Fade, Move, Sticky } from "react-scroll-motion";
 
 
 const FadeUp = batch(Fade(), Move(), Sticky());
 
+const HeaderContainer = styled.div`
+display: block;
+`;
+
 export default function Header () {
     return (
-    <>
-        <NavBar />
+        <HeaderContainer>
             <ScrollContainer>
                 <ScrollPage page={0}>
                     <Animator animation={FadeUp}>
                         <Photo />
-                    <TitlePhoto />
-                </Animator>
-            </ScrollPage>
-        </ScrollContainer>
-    </>
+                        </Animator>
+                    </ScrollPage>
+                </ScrollContainer>
+        </HeaderContainer>
     );
 }

@@ -3,6 +3,7 @@ import { HashLink } from 'react-router-hash-link';
 
 export const StyledNavBar = styled.nav`
 display: flex;
+justify-content: space-around;
 align-items: center;
 position: fixed;
 left: 0;
@@ -13,19 +14,22 @@ bottom: auto;
 z-index: 100;
 padding-top: 10px;
 padding-bottom: 10px;
-justify-content: center;
 border-bottom: solid 1px white;
 width: auto;
 height: 6vh;
 font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+@media only screen and (max-width: 768px) {
+  width: auto;
+}
 `;
 
 export const StyledLink = styled(HashLink)`
 display: flex;
+width: 30px;
 text-decoration: none;
+font-size: 0.7rem;
 padding: 15px;
 color: #ffffff;
-width: max-content;
 float: left;
 margin-left: 15px;
 position: relative;

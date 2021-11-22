@@ -14,8 +14,13 @@ const StyledSoftSkillsDatesContainer = styled.div`
   display: flex;
   background-color: black;
   justify-content: space-around;
-  height: 70vh;
+  height: 80vh;
   font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  @media only screen and (max-width: 768px){
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
 `;
 
 const StyledLeftBox = styled.div`
@@ -24,28 +29,41 @@ const StyledLeftBox = styled.div`
   align-items: center;
   flex-direction: column;
   text-align: center;
-  position: relative;
   background-color: #1d1d1f;
   border: 1px solid hsla(0, 0%, 51.4%, 0.16);
   border-radius: 28px;
   width: 75vh;
-  height: 42vh;
+  height: 43vh;
   padding: 28px;
   line-height: 1.1;
+  @media only screen and (max-width: 768px){
+  height: auto;
+  width: auto;
+  word-wrap: break-word;
+  }
 `;
 
 const StyledRightBox = styled.div`
   display: flex;
   width: 50vh;
-  height: 42vh;
+  @media only screen and (max-width: 768px){
+  height: auto;
+  width: auto;
+  padding-top: 20px;
+  }
 `;
 
 const StyledCaseRepartition = styled.div`
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: space-between;
   width: 20vh;
   height: 48vh;
+  @media only screen and (max-width: 768px){
+  height: auto;
+  width: auto;
+  }
 `;
 
 const StyledLittleCase = styled.div`
@@ -57,21 +75,36 @@ const StyledLittleCase = styled.div`
   border-radius: 28px;
   height: 130px;
   width: 130px;
+  @media only screen and (max-width: 768px){
+  height: 70px;
+  width: 70px;
+  }
+
 `;
 
 const Styledh3 = styled.h3`
   color: white;
   font-size: 38px;
+  @media only screen and (max-width: 768px){
+ font-size: 20px;
+  }
 `;
 
 const StyledText = styled.p`
   color: #a3a3a3;
   font-size: 30px;
+  @media only screen and (max-width: 768px){
+ font-size: 17px;
+  }
 `;
 
 const StyledPicto = styled.img`
   height: 90px;
   width: 90px;
+  @media only screen and (max-width: 768px){
+  height: 50px;
+  width: 50px;
+  }
 `;
 
 const Line = styled.div`
@@ -82,7 +115,6 @@ const Line = styled.div`
 
 export default function SoftSkillsDates() {
   return (
-    <>
       <StyledSoftSkillsDatesContainer>
         <StyledLeftBox>
           <Styledh3>FullStack Web Developer 8 months of experience.</Styledh3>
@@ -129,6 +161,5 @@ export default function SoftSkillsDates() {
           </StyledCaseRepartition>
         </StyledRightBox>
       </StyledSoftSkillsDatesContainer>
-    </>
   );
 }
