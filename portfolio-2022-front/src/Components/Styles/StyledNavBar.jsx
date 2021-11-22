@@ -18,6 +18,9 @@ border-bottom: solid 1px white;
 width: auto;
 height: 6vh;
 font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+@media only screen and (max-width: 768px) {
+  width: auto;
+}
 `;
 
 export const StyledLink = styled(HashLink)`

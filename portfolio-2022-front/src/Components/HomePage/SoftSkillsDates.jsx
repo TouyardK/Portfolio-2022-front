@@ -9,7 +9,6 @@ import css3 from '../../Assets/css.png';
 import html from '../../Assets/html.png';
 import vue from '../../Assets/vue.svg';
 import firebase from '../../Assets/firebase-icon.svg';
-import { device } from '../Styles/device';
 
 const StyledSoftSkillsDatesContainer = styled.div`
   display: flex;
@@ -20,9 +19,8 @@ const StyledSoftSkillsDatesContainer = styled.div`
   @media only screen and (max-width: 768px){
     flex-direction: column;
     align-items: center;
-    height: 10vh;
+    height: auto;
 }
-
 `;
 
 const StyledLeftBox = styled.div`
@@ -31,7 +29,6 @@ const StyledLeftBox = styled.div`
   align-items: center;
   flex-direction: column;
   text-align: center;
-  position: relative;
   background-color: #1d1d1f;
   border: 1px solid hsla(0, 0%, 51.4%, 0.16);
   border-radius: 28px;
@@ -39,28 +36,32 @@ const StyledLeftBox = styled.div`
   height: 43vh;
   padding: 28px;
   line-height: 1.1;
-  @media ${device.mobileS}{
-  height: 25vh;
+  @media only screen and (max-width: 768px){
+  height: auto;
   width: auto;
+  word-wrap: break-word;
   }
 `;
 
 const StyledRightBox = styled.div`
   display: flex;
   width: 50vh;
-  @media ${device.mobileS}{
+  @media only screen and (max-width: 768px){
+  height: auto;
   width: auto;
+  padding-top: 20px;
   }
 `;
 
 const StyledCaseRepartition = styled.div`
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: space-between;
   width: 20vh;
   height: 48vh;
-  @media ${device.mobileS}{
-  height: 19vh;
+  @media only screen and (max-width: 768px){
+  height: auto;
   width: auto;
   }
 `;
@@ -74,23 +75,17 @@ const StyledLittleCase = styled.div`
   border-radius: 28px;
   height: 130px;
   width: 130px;
-  @media ${device.mobileS}{
+  @media only screen and (max-width: 768px){
   height: 70px;
   width: 70px;
   }
 
-  @media ${device.tablet}{
-  }
-
-  @media ${device.desktop}{
-
-  }
 `;
 
 const Styledh3 = styled.h3`
   color: white;
   font-size: 38px;
-  @media ${device.mobileS}{
+  @media only screen and (max-width: 768px){
  font-size: 20px;
   }
 `;
@@ -98,7 +93,7 @@ const Styledh3 = styled.h3`
 const StyledText = styled.p`
   color: #a3a3a3;
   font-size: 30px;
-  @media ${device.mobileS}{
+  @media only screen and (max-width: 768px){
  font-size: 17px;
   }
 `;
@@ -106,16 +101,9 @@ const StyledText = styled.p`
 const StyledPicto = styled.img`
   height: 90px;
   width: 90px;
-  @media ${device.mobileS}{
+  @media only screen and (max-width: 768px){
   height: 50px;
   width: 50px;
-  }
-
-  @media ${device.tablet}{
-  }
-
-  @media ${device.desktop}{
-
   }
 `;
 
@@ -127,7 +115,6 @@ const Line = styled.div`
 
 export default function SoftSkillsDates() {
   return (
-    <>
       <StyledSoftSkillsDatesContainer>
         <StyledLeftBox>
           <Styledh3>FullStack Web Developer 8 months of experience.</Styledh3>
@@ -174,6 +161,5 @@ export default function SoftSkillsDates() {
           </StyledCaseRepartition>
         </StyledRightBox>
       </StyledSoftSkillsDatesContainer>
-    </>
   );
 }

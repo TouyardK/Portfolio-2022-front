@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from "styled-components";
-import { device } from '../Styles/device';
 
 const StyledContainerTitles = styled.div`
 display: flex;
@@ -32,7 +31,7 @@ const StyledTitleName = styled.h2`
 font-size: 2rem;
 letter-spacing: -.045em;
 font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-@media ${device.mobileS}{
+@media only screen and (max-width: 768px){
 padding: 17px;
 font-size: 1.5rem;
   }
@@ -42,7 +41,7 @@ const StyledTitlePro = styled.h1`
 font-size: 3rem;
 letter-spacing: -.045em;
 font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-@media ${device.mobileS}{
+@media only screen and (max-width: 768px){
 padding: 5px;
 font-size: 0.95rem;
   }

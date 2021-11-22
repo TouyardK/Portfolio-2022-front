@@ -1,17 +1,21 @@
 import React from 'react';
 import styled from "styled-components";
-import { device } from '../Styles/device';
 
 
 const StyledTitleContainer = styled.div`
 display: flex;
 background-color: black;
+position: relative;
 justify-content: center;
 align-items: center;
 left: 0;
 right: 0;
+height: auto;
+width: auto;
 @media only screen and (max-width: 768px){
-height: 60vh;
+height: 30vh;
+width: auto;
+justify-content: start;
 }
 `;
 
@@ -19,7 +23,6 @@ const StyledTitleBox = styled.div`
 display: flex;
 flex-direction: column;
 background-color: black;
-border-radius: 25px;
 width: 150vh;
 height: 38vh;
 line-height: 1vh;
@@ -27,6 +30,9 @@ padding-left: 20vh;
 font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 @media only screen and (max-width: 768px){
   word-wrap: break-word;
+  padding-left: 0;
+  height: auto;
+  width: auto;
 }
 `;
 
@@ -35,7 +41,7 @@ color: white;
 letter-spacing: -.045em;
 font-size: 8vh;
 @media only screen and (max-width: 768px){
-font-size: 2vh;
+font-size: 3.5vh;
 }
 `;
 
@@ -44,7 +50,7 @@ color: #999999;
 letter-spacing: -.045em;
 font-size: 4vh;
 @media only screen and (max-width: 768px){
-font-size: 2vh;
+font-size: 3vh;
 }
 `;
 

@@ -1,14 +1,20 @@
 import React from 'react';
 import styled from "styled-components";
-import { device } from '../Styles/device';
 
 const StyledAboutBoxContainer = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
+position: relative;
 height: 45vh;
+width: auto;
 letter-spacing: -.045em;
 font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+@media only screen and (max-width: 768px){
+  word-wrap: break-word;
+  width: auto;
+  height: auto;
+}
 `;
 
 const StyledAboutBox = styled.div`
@@ -16,7 +22,6 @@ display: block;
 text-align: center;
 justify-content: column;
 border-radius: 28px;
-position: relative;
 width: 160vh;
 height: auto;
 outline: none;
@@ -27,6 +32,8 @@ background-image: linear-gradient(120deg, #eb4f56, #9d66e9);
 box-shadow: 0 0 10px 5px;
 @media only screen and (max-width: 768px){
   word-wrap: break-word;
+  width: auto;
+  height: auto;
 }
 `;
 
@@ -42,9 +49,7 @@ color: whitesmoke;
 font-size: 2.5vh;
 `;
 
-const StyledBrAbout = styled.br`
-
-`;
+const StyledBrAbout = styled.br``;
 
 
 export default function AboutBox () {

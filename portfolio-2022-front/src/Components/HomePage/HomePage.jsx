@@ -15,7 +15,6 @@ import Footer from './Footer';
 
 const StyledContainerGlobal = styled.div`
 background-color: #1d1d1f;
-
 `;
 
 export default function HomePage () {
