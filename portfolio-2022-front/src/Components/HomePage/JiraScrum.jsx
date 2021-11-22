@@ -10,10 +10,13 @@ justify-content: center;
 align-items: center;
 background-color: black;
 height: 60vh;
-@media ${device.mobileS}{
+@media only screen and (max-width: 768px){
     flex-direction: column;
     align-items: center;
-    height: 55vh;
+    height: auto;
+    width: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 `;
 
@@ -23,11 +26,11 @@ border-radius: 28px;
 height: 50vh;
 width: 160vh;
 letter-spacing: -.045em;
-@media ${device.mobileS}{
+@media only screen and (max-width: 768px){
     flex-direction: column;
     align-items: center;
-    height: 38vh;
-    width: 40vh;
+    height: auto;
+    width: auto;
   }
 `;
 
@@ -37,9 +40,9 @@ width: 75vh;
 border-radius: 15px;
 border: 1px solid hsla(0,0%,51.4%,.16);
 box-shadow: 0 0 10px 5px rgb(163, 83, 255);
-@media ${device.mobileS}{
+@media only screen and (max-width: 768px){
 height: 20vh;
-width: 40vh;
+width: auto;
   }
 `;
 
@@ -48,7 +51,8 @@ display: flex;
 justify-content: center;
 align-items: center;
 width: 50%;
-@media ${device.mobileS}{
+@media only screen and (max-width: 768px){
+  width: auto;
   }
 `;
 
@@ -58,7 +62,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 width: 50%;
-@media ${device.mobileS}{
+@media only screen and (max-width: 768px){
 height: auto;
 width: auto;
   }
@@ -68,7 +72,7 @@ const TitleResponsive = styled.h2`
 color: white;
 font-size: 3vh;
 font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-@media ${device.mobileS}{
+@media only screen and (max-width: 768px){
 font-size: 2.5vh;
   }
 `;
@@ -78,7 +82,7 @@ color: white;
 font-size: 2vh;
 text-align: center;
 font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-@media ${device.mobileS}{
+@media only screen and (max-width: 768px){
 font-size: 1.70vh;
   }
 `;
@@ -88,7 +92,7 @@ border: solid 1px;
 background-image: linear-gradient(120deg, #4e68ff, #b726f0);
 width: 17vh;
 height: 1px;
-@media ${device.mobileS}{
+@media only screen and (max-width: 768px){
 width: 15vh;
   }
 `;
@@ -98,7 +102,7 @@ border: solid 1px;
 background-image: linear-gradient(120deg, #4e68ff, #b726f0);
 width: 45vh;
 height: 1px;
-@media ${device.mobileS}{
+@media only screen and (max-width: 768px){
 width: 30vh;
   }
 `;

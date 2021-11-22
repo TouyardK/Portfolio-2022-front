@@ -12,6 +12,10 @@ flex-direction: column;
 justify-content: center;
 height: auto;
 width: auto;
+@media only screen and (max-width: 768px){
+height: auto;
+width: auto;
+}
 `;
 
 const ContainerTop = styled.div`
@@ -19,6 +23,13 @@ display: flex;
 justify-content: space-around;
 width: 90vh;
 height: 30vh;
+@media only screen and (max-width: 768px){
+flex-direction: column;
+align-content: center;
+width: 35vh;
+height: 60vh;
+padding-bottom: 10px;
+}
 `;
 
 const ContainerBottom = styled.div`
@@ -26,6 +37,11 @@ display: flex;
 justify-content: space-around;
 width: 90vh;
 height: 30vh;
+@media only screen and (max-width: 768px){
+flex-direction: column;
+width: 35vh;
+height: 60vh;
+}
 `;
 
 

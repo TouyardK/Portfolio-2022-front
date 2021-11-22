@@ -8,7 +8,10 @@ flex-direction: column;
 align-items: center;
 height: 5px;
 line-height: 3px;
-
+@media only screen and (max-width: 768px){
+  height: auto;
+  width: auto;
+}
 `;
 
 const ContactText = styled.h1`
@@ -31,6 +34,11 @@ position: relative;
 100% {
   background-position-x: 500%;
 }
+}
+@media only screen and (max-width: 768px){
+  height: auto;
+  width: auto;
+  font-size: 1.25rem;
 }
 `;
 

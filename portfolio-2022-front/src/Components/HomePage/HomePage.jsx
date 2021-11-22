@@ -15,6 +15,7 @@ import Footer from './Footer';
 
 const StyledContainerGlobal = styled.div`
 background-color: #1d1d1f;
+height: auto;
 `;
 
 export default function HomePage () {
@@ -25,6 +26,12 @@ export default function HomePage () {
             <AboutBox />
             <SoftSkills />
             <SoftSkillsDates />
+            <AdditionalSkills />
+            <ProjectStand />
+            <ProjectStandContain />
+            <Resume />
+            <Contact />
+            <Footer />
         </StyledContainerGlobal>
     );
 }

@@ -19,7 +19,7 @@ background-image: url(${logoRs});
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-border: 3px solid black;
+border: 3px solid red;
 border-radius: 28px;
 width: 40vh;
 height: 25vh;
@@ -33,6 +33,9 @@ cursor: pointer;
 will-change: transform;
 transition: transform .65s cubic-bezier(0.18, 0.9, 0.58, 1);
 background-image: url(${regionsud});
+}
+@media only screen and (max-width: 768px){
+width: auto;
 }
 `;
 
@@ -50,6 +53,10 @@ font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial
 &:hover{
 cursor: pointer;
 opacity: 1;
+}
+@media only screen and (max-width: 768px){
+height: auto;
+width: auto;
 }
 `;
 

@@ -6,7 +6,7 @@ import { Animator, ScrollContainer, ScrollPage, batch, Fade, MoveOut, Sticky } f
 const ResumeMainContainer = styled.div`
 display: block;
 background-color: black;
-height:auto;
+height: 155vh;
 `;
 
 
@@ -14,7 +14,7 @@ export default function Resume () {
     return (
             <ResumeMainContainer id="section-resume">
                 <ScrollContainer>
-                    <ScrollPage page={5}>
+                    <ScrollPage page={6}>
                         <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -800))}>
                             <PartnerCitation />
                         </Animator>

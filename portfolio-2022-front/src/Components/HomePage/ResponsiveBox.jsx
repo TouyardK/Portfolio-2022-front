@@ -1,17 +1,18 @@
 import React from 'react';
 import styled from "styled-components";
 import responsive from '../../Assets/responsive.jpg';
-import { device } from '../Styles/device';
 
 const ResponsiveContainer = styled.div`
 display: flex;
 align-items: center;
 height: 70vh;
 width: 160vh;
-@media ${device.mobileS}{
+@media only screen and (max-width: 768px){
     flex-direction: column;
     align-items: center;
-    height: 38vh;
+    height: 35vh;
+    width: auto;
+    padding-bottom: 20px;
   }
 `;
 
@@ -22,7 +23,7 @@ background-image: linear-gradient(120deg, #4e68ff, #b726f0);
 height: 40vh;
 width: 160vh;
 letter-spacing: -.045em;
-@media ${device.mobileS}{
+@media only screen and (max-width: 768px){
     flex-direction: column;
     align-items: center;
     height: 38vh;
@@ -36,7 +37,7 @@ width: 75vh;
 border-radius: 15px;
 border: 1px solid hsla(0,0%,51.4%,.16);
 box-shadow: 0 0 10px 5px;
-@media ${device.mobileS}{
+@media only screen and (max-width: 768px){
 height: 20vh;
 width: 30vh;
   }
@@ -47,7 +48,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 width: 50%;
-@media ${device.mobileS}{
+@media only screen and (max-width: 768px){
 height: 20vh;
 width: 30vh;
   }
@@ -59,7 +60,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 width: 50%;
-@media ${device.mobileS}{
+@media only screen and (max-width: 768px){
 height: auto;
 width: auto;
   }
@@ -69,7 +70,7 @@ export const TitleResponsive = styled.h2`
 color: white;
 font-size: 5vh;
 font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-@media ${device.mobileS}{
+@media only screen and (max-width: 768px){
 font-size: 2.5vh;
   }
 `;
@@ -78,7 +79,7 @@ export const TextResponsive = styled.p`
 color: white;
 font-size: 2vh;
 font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-@media ${device.mobileS}{
+@media only screen and (max-width: 768px){
 font-size: 1.4vh;
   }
 `;
@@ -88,7 +89,7 @@ border: solid 1px;
 background-image: linear-gradient(120deg, #ffffff, #118f00);
 width: 17vh;
 height: 1px;
-@media ${device.mobileS}{
+@media only screen and (max-width: 768px){
 width: 28vh;
   }
 `;
