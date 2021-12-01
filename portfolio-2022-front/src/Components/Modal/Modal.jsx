@@ -30,13 +30,18 @@ const ModalWrapper = styled.div`
 const ModalContain = styled.div`
   z-index: 100;
   border: solid 10px black;
-  background-image: url(${pixel}),linear-gradient(45deg,#eb4f56, #9d66e9);
+  background-image: url(${pixel}),linear-gradient(45deg,#136dff, #626262);
+  background-position: cover;
   position: relative;
   margin: auto;
   border-radius: 28px;
   width: auto;
   height: auto;
   padding: 1rem;
+  @media only screen and (max-width: 425px){
+  width: 30vh;
+  height: 82vh;
+}
 `;
 
 const ModalHeader = styled.div`
@@ -44,7 +49,12 @@ const ModalHeader = styled.div`
   justify-content: space-between;
   width: 150vh;
   height: auto;
-
+@media only screen and (max-width: 425px){
+height: 10vh;
+width: 35vh;
+justify-content: center;
+align-items: center;
+}
 `;
 
 const ModalBody = styled.div`
@@ -52,6 +62,10 @@ display: flex;
 flex-direction: column;
 width: 150vh;
 height: 60vh;
+@media only screen and (max-width: 425px){
+  width: 20vh;
+  height: 35vh;
+}
 `;
 
 const ModalCloseButton = styled.button`
@@ -68,11 +82,18 @@ const ModalCloseButton = styled.button`
 const CloseImg = styled.img`
 height: 6vh;
 width: 6vh;
+@media only screen and (max-width: 425px){
+height: 3vh;
+width: 3vh;
+}
 `;
 
 const ModalTitleh4 = styled.h4`
 font-size: 55px;
 color: white;
+@media only screen and (max-width: 425px){
+font-size: 20px;
+}
 `;
 
 const Modal = ({ isOpen, hide, title, ...props }) =>

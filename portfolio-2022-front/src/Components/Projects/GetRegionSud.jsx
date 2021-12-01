@@ -34,14 +34,14 @@ will-change: transform;
 transition: transform .65s cubic-bezier(0.18, 0.9, 0.58, 1);
 background-image: url(${regionsud});
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 425px){
 width: auto;
 }
 `;
 
 export const ButtonProjects = styled.button`
 color: white;
-border: solid 3px #1d1d1f;
+border: solid 1px #1d1d1f;
 background-image: linear-gradient(120deg, #eb4f56, #9d66e9);
 border-radius: 28px;
 width: 25vh;
@@ -54,9 +54,9 @@ font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial
 cursor: pointer;
 opacity: 1;
 }
-@media only screen and (max-width: 768px){
-height: auto;
-width: auto;
+@media only screen and (max-width: 425px){
+height: 5vh;
+width: 15vh;
 }
 `;
 
@@ -66,6 +66,9 @@ justify-content: center;
 flex-direction: column;
 width: auto;
 height: 45vh;
+@media only screen and (max-width: 425px){
+height: 82vh;
+}
 `;
 
 export const ContainerImg = styled.div`
@@ -74,12 +77,21 @@ justify-content: space-around;
 align-items: center;
 width: auto;
 height: 30vh;
+@media only screen and (max-width: 425px){
+width: 30vh;
+height: 50vh;
+flex-direction: column;
+}
 `;
 
 export const ContainerText = styled.div`
 display: flex;
 width: auto;
 height: 10vh;
+@media only screen and (max-width: 425px){
+width: 30vh;
+height: 80vh;
+}
 `;
 
 export const ModalText = styled.p`
@@ -87,6 +99,9 @@ text-align: center;
 color: white;
 font-size: 35px;
 font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+@media only screen and (max-width: 425px){
+font-size: 15px;
+}
 `;
 
 export const ModalImg = styled.img`
@@ -98,6 +113,10 @@ border: solid 4px #1d1d1f;
     transition: all 2s;
     border: solid 4px whitesmoke;
   }
+  @media only screen and (max-width: 425px){
+width: 25vh;
+height: 30vh;
+}
 `;
 
 export default function GetRegionSud () {

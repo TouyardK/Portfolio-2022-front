@@ -8,13 +8,13 @@ display: block;
 background-color: black;
 height:110vh;
 @media only screen and (max-width: 375px){
-height:115vh;
+height:auto;
 }
 @media only screen and (max-width: 425px){
 height:125vh;
 }
 @media only screen and (max-width: 768px){
-height:155vh;
+height:135vh;
 }
 `;
 
