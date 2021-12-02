@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
 import agile from '../../Assets/agile.jpg';
-import { device } from '../Styles/device';
 
 
 const JiraScrumContainer = styled.div`

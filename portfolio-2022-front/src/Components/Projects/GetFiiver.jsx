@@ -2,13 +2,12 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
 import { ButtonProjects } from './GetRegionSud';
-import fiiver1 from '../../Assets/fiiver1.png'
 import Modal from '../Modal/Modal';
 import useModal from '../Modal/useModal';
 import fiiver from '../../Assets/fiiver.png';
-import fiiver2 from '../../Assets/fiiver2.png';
-import fiiver3 from '../../Assets/fiiver3.png';
-import { ModalBody, ContainerImg, ContainerText, ModalText, ModalImg } from './GetRegionSud';
+import fiiver1 from '../../Assets/fiiver1.png';
+import CarouselFiiver from '../Carousel/CarouselFiiver';
+import { ModalBody, ContainerImg, ContainerText, ModalText } from './GetRegionSud';
 
 const BodyFiiver = styled.div`
 display: flex;
@@ -34,7 +33,13 @@ will-change: transform;
 transition: transform .65s cubic-bezier(0.18, 0.9, 0.58, 1);
 background-image: url(${fiiver1});
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 425px){
+width: auto;
+}
+@media screen and (min-width: 426px) and (max-width: 767px){
+width: auto;
+}
+@media only screen and (min-width: 768px){
 width: auto;
 }
 `;
@@ -71,9 +76,7 @@ export default function GetFiiver () {
                   >
                       <ModalBody>
                         <ContainerImg>
-                          <ModalImg src={fiiver1} alt="rs2" />
-                          <ModalImg src={fiiver2} alt="rs3" />
-                          <ModalImg src={fiiver3} alt="rs4" />
+                          <CarouselFiiver />
                         </ContainerImg>
                             <ContainerText>
                                 <ModalText>

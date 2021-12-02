@@ -2,7 +2,6 @@ import React from 'react';
 import styled from "styled-components";
 import PhotoK2 from '../../Assets/PhotoK2.jpg';
 import TitlePhoto from './TitlePhoto';
-import { device } from '../Styles/device';
 
 const StyledContainer = styled.div`
 @media only screen and (max-width: 768px){

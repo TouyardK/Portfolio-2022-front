@@ -22,15 +22,15 @@ export default function HomePage () {
     return (
         <StyledContainerGlobal  id="section-home">
             <NavBar />
-            <Header />
-            <AboutBox />
-            <SoftSkills />
-            <SoftSkillsDates />
-            <AdditionalSkills />
-            <ProjectStand />
-            <ProjectStandContain />
-            <Resume />
-            <Contact />
+                <Header />
+                    <AboutBox />
+                        <SoftSkills />
+                            <SoftSkillsDates />
+                                <AdditionalSkills />
+                            <ProjectStand />
+                        <ProjectStandContain />
+                    <Resume />
+                <Contact />
             <Footer />
         </StyledContainerGlobal>
     );
