@@ -15,16 +15,23 @@ import Footer from './Footer';
 
 const StyledContainerGlobal = styled.div`
 background-color: #1d1d1f;
+height: auto;
 `;
 
 export default function HomePage () {
     return (
         <StyledContainerGlobal  id="section-home">
             <NavBar />
-            <Header />
-            <AboutBox />
-            <SoftSkills />
-            <SoftSkillsDates />
+                <Header />
+                    <AboutBox />
+                        <SoftSkills />
+                            <SoftSkillsDates />
+                                <AdditionalSkills />
+                            <ProjectStand />
+                        <ProjectStandContain />
+                    <Resume />
+                <Contact />
+            <Footer />
         </StyledContainerGlobal>
     );
 }

@@ -3,12 +3,11 @@ import axios from 'axios';
 import styled from 'styled-components';
 import { ButtonProjects } from './GetRegionSud';
 import logooovyy from '../../Assets/logooovy.png';
-import oovy1 from '../../Assets/Oovy1.png';
-import oovy2 from '../../Assets/oovy2.png';
-import oovy3 from '../../Assets/oovy3.png';
+import oovy1 from '../../Assets/Oovy1.png'
+import CarouselOovy from '../Carousel/CarouselOovy';
 import useModal from '../Modal/useModal';
 import Modal from '../Modal/Modal';
-import { ModalBody, ContainerImg, ContainerText, ModalText, ModalImg } from './GetRegionSud';
+import { ModalBody, ContainerImg, ContainerText, ModalText } from './GetRegionSud';
 
 const BodyOovy = styled.div`
 display: flex;
@@ -33,6 +32,9 @@ cursor: pointer;
 will-change: transform;
 transition: transform .65s cubic-bezier(0.18, 0.9, 0.58, 1);
 background-image: url(${oovy1});
+}
+@media only screen and (max-width: 768px){
+width: auto;
 }
 `;
 
@@ -69,9 +71,7 @@ export default function GetOovy () {
                   >
                       <ModalBody>
                         <ContainerImg>
-                          <ModalImg src={oovy1} alt="rs2" />
-                          <ModalImg src={oovy2} alt="rs3" />
-                          <ModalImg src={oovy3} alt="rs4" />
+                          <CarouselOovy />
                         </ContainerImg>
                         <ContainerText>
                              <ModalText>

@@ -30,6 +30,9 @@ will-change: transform;
 transition: transform .65s cubic-bezier(0.18, 0.9, 0.58, 1);
 background-image: url(${akgs1});
 }
+@media only screen and (max-width: 768px){
+width: auto;
+}
 `;
 
 

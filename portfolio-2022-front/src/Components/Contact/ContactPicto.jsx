@@ -9,11 +9,19 @@ display: flex;
 justify-content: space-around;
 width: 40%;
 height: auto;
+@media only screen and (max-width: 768px){
+  height: auto;
+  width: 20vh;
+}
 `;
 
 const PictoLink = styled.img`
 height: 30px;
 width: 30px;
+@media only screen and (max-width: 768px){
+  height: 30px;
+  width: 30px;
+}
 `;
 
 

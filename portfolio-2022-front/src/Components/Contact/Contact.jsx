@@ -7,6 +7,15 @@ const ContactMainContainer = styled.div`
 display: block;
 background-color: black;
 height:110vh;
+@media only screen and (max-width: 375px){
+height:20vh;
+}
+@media only screen and (max-width: 425px){
+height:70vh;
+}
+@media only screen and (max-width: 768px){
+height:155vh;
+}
 `;
 
 
@@ -17,7 +26,7 @@ export default function ContactContainer () {
         <>
             <ContactMainContainer id="section-contact">
                 <ScrollContainer>
-                    <ScrollPage page={6}>
+                    <ScrollPage page={7}>
                         <Animator animation={ZoomInScrollOut}>
                             <ContactTitle/>
                         </Animator>

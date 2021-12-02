@@ -50,6 +50,7 @@ const StyledRightBox = styled.div`
   height: auto;
   width: auto;
   padding-top: 20px;
+  padding-bottom: 20px;
   }
 `;
 

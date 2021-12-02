@@ -4,10 +4,8 @@ import styled from 'styled-components';
 import Modal from '../Modal/Modal';
 import regionsud from '../../Assets/regionsud.png';
 import useModal from '../Modal/useModal';
+import CarouselRegionSud from '../Carousel/CarouselRegionSud';
 import logoRs from '../../Assets/logoRS.png';
-import rs2 from '../../Assets/regionsud2.png';
-import rs3 from '../../Assets/regionsud3.png';
-import rs4 from '../../Assets/regionsud4.png';
 
 
 export const BodyProjects = styled.div`
@@ -34,11 +32,20 @@ will-change: transform;
 transition: transform .65s cubic-bezier(0.18, 0.9, 0.58, 1);
 background-image: url(${regionsud});
 }
+@media only screen and (max-width: 425px){
+width: auto;
+}
+@media screen and (min-width: 426px) and (max-width: 767px){
+width: auto;
+}
+@media only screen and (min-width: 768px){
+width: auto;
+}
 `;
 
 export const ButtonProjects = styled.button`
 color: white;
-border: solid 3px #1d1d1f;
+border: solid 1px #1d1d1f;
 background-image: linear-gradient(120deg, #eb4f56, #9d66e9);
 border-radius: 28px;
 width: 25vh;
@@ -51,6 +58,18 @@ font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial
 cursor: pointer;
 opacity: 1;
 }
+@media only screen and (max-width: 425px){
+height: 5vh;
+width: 15vh;
+}
+@media screen and (min-width: 426px) and (max-width: 768px){
+height: 5vh;
+width: 15vh;
+}
+@media only screen and (min-width: 768px){
+height: 5vh;
+width: 15vh;
+}
 `;
 
 export const ModalBody = styled.div`
@@ -59,6 +78,20 @@ justify-content: center;
 flex-direction: column;
 width: auto;
 height: 45vh;
+@media only screen and (max-width: 425px){
+height: 50vh;
+width: 35vh;
+}
+@media screen and (min-width: 426px) and (max-width: 768px){
+height: 90vh;
+width: 45vh;
+align-items: center;
+}
+@media only screen and (min-width: 768px){
+height: 90vh;
+width: 80vh;
+align-items: center;
+}
 `;
 
 export const ContainerImg = styled.div`
@@ -67,31 +100,62 @@ justify-content: space-around;
 align-items: center;
 width: auto;
 height: 30vh;
+@media only screen and (max-width: 425px){
+width: auto;
+height: auto;
+justify-content: center;
+}
+@media screen and (min-width: 426px) and (max-width: 768px){
+width: auto;
+height: auto;
+justify-content: center;
+}
+@media only screen and (min-width: 768px){
+width: auto;
+height: auto;
+justify-content: center;
+}
 `;
 
 export const ContainerText = styled.div`
 display: flex;
+justify-content: center;
 width: auto;
 height: 10vh;
+@media only screen and (max-width: 425px){
+width: 35vh;
+height: 10vh;
+}
+@media screen and (min-width: 426px) and (max-width: 768px){
+width: 32vh;
+height: 15vh;
+word-wrap: break-word;
+}
+@media only screen and (min-width: 768px){
+  width: 82vh;
+height: 15vh;
+word-wrap: break-word;
+}
 `;
 
 export const ModalText = styled.p`
 text-align: center;
-color: white;
+color: #000000d1;
+word-wrap: break-word;
 font-size: 35px;
 font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+@media only screen and (max-width: 425px){
+font-size: 10px;
+}
+@media screen and (min-width: 426px) and (max-width: 768px){
+font-size: 15px;
+}
+@media only screen and (min-width: 768px){
+  font-size: 20px;
+}
 `;
 
-export const ModalImg = styled.img`
-height: 25vh;
-width: 49vh;
-border: solid 4px #1d1d1f;
-&:hover{
-    transform: scale(1.20);
-    transition: all 2s;
-    border: solid 4px whitesmoke;
-  }
-`;
+
 
 export default function GetRegionSud () {
     const [itemProject, setItemProject] = useState([]);
@@ -124,9 +188,7 @@ export default function GetRegionSud () {
                   >
                       <ModalBody>
                         <ContainerImg>
-                          <ModalImg src={rs2} alt="rs2" />
-                          <ModalImg src={rs3} alt="rs3" />
-                          <ModalImg src={rs4} alt="rs4" />
+                            <CarouselRegionSud />
                         </ContainerImg>
                             <ContainerText>
                               <ModalText>
